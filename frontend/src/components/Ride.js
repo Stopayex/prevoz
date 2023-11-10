@@ -57,10 +57,10 @@ function Ride() {
         <>
             {ride.date !== undefined ?
 
-            <div className="py-10 float-left w-3/5">
+            <div className="py-10 w-5/6 float-right">
                 {/*{!userContext.user ? <Navigate replace to="/login"/> : ""}*/}
                 {isSuccess ? <Navigate replace to="/rides"/> : ""}
-                <p className="text-tertiary text-3xl font-bold mb-5 text-left">Ride</p>
+                <p className="text-tertiary text-3xl font-bold mb-5 text-center">Ride</p>
                 <Card>
                     {/*<div className="bg-greyish rounded-full w-32 h-32 mx-auto flex justify-center items-center mb-5">*/}
                     {/*    <img className="w-24 h-24 " src={logo} alt="Logo"/>*/}
@@ -118,7 +118,7 @@ function Ride() {
                     </div>
 
                     {isOwner && ride.user ?
-                        <div className="flex gap-5">
+                        <div className="space-y-5">
                             <div className="w-full">
                                 <Link to={"/ride/edit/" + ride._id}>
                                     <Button text={"Edit"} icon="bi bi-pencil-square"/>

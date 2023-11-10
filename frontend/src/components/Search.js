@@ -31,8 +31,8 @@ function Rides() {
     }, []);
 
     return (
-        <div className={"py-10 float-left w-3/5"}>
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Rides from {from} to {to} on {date.split('-').reverse().join('/')}</p>
+        <div className={"py-10 float-right w-3/5"}>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-center">Rides from {from} to {to} on {date.split('-').reverse().join('/')}</p>
 
             <div className={"space-y-5"}>
                 {rides.map((ride) => (

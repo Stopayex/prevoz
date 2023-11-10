@@ -77,11 +77,11 @@ function AddRide() {
 
     return (
 
-        <div className={"py-10 float-left w-3/5"}>
+        <div className={"py-10 float-right w-5/6"}>
             {/*{userContext.user ? <Navigate replace to="/"/> : ""}*/}
             {isSuccess ? <Navigate replace to={`/ride/${id}`}/> : null}
 
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit ride</p>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-center">Edit ride</p>
             <Card>
                 <form onSubmit={(e) => {
                     console.log("submit");
@@ -140,7 +140,7 @@ function AddRide() {
                     </div>
                     <div className="">
                         <label
-                            className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                            className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                             {info}
                         </label>
                         <Button text="Save" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/>

@@ -9,7 +9,7 @@ function RideCard({ ride }) {
         <div className="cursor-pointer transform transition duration-200 hover:scale-105">
             <Link to={"/ride/" + ride._id}>
                 <Card>
-                    <div className="flex flex-row">
+                    <div className="flex flex-row w-52 h-32">
                         <div className="flex-col">
                             <p className="block text-lg mb-3.5 text-tertiary text-left font-bold">
                                 {ride.from} <span className="text-grey">></span> {ride.to}

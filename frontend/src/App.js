@@ -15,7 +15,6 @@ import Rides from "./components/Rides";
 import Ride from "./components/Ride";
 import AddRide from "./components/AddRide";
 import EditRide from "./components/EditRide";
-import Search from "./components/Search";
 
 function App() {
     const [user, setUser] = useState(localStorage.user ? JSON.parse(localStorage.user) : null);
@@ -30,12 +29,9 @@ function App() {
                 setUserContext: updateUserData
             }}>
                 <div className="App">
-                    <div className={"bg-gradient-to-t from-secondary-light to-secondary-dark  min-h-screen"}>
+                    <div className={"bg-gradient-to-t from-secondary-light to-secondary-dark h-screen"}>
                         <div className={"grid grid-cols-3"}>
-                            <div className={"col-span-1 float-right"}>
-                                <Navbar/>
-                            </div>
-                            <div className={"col-span-2 float-left"}>
+                            <div className={"col-span-2"}>
                                 <Routes>
                                     <Route path={"/"} element={<Home/>}></Route>
                                     <Route path="/profile" element={<Profile/>}></Route>
@@ -48,11 +44,16 @@ function App() {
                                     <Route path="/ride/:id" element={<Ride/>}></Route>
                                     <Route path="/ride/edit/:id" element={<EditRide/>}></Route>
                                     <Route path="/add" element={<AddRide/>}></Route>
-                                    <Route path="/search/:from/:to/:date" element={<Search/>}></Route>
+                                    <Route path="/search/:from/:to/:date" element={<Home/>}></Route>
 
                                 </Routes>
                             </div>
+                            <div className={"col-span-1"}>
+                                <Navbar/>
+                            </div>
                         </div>
+                            <p className="text-primary-dark absolute bottom-0 left-1/2 -translate-x-1/2">RiderCo</p>
+
 
 
                     </div>

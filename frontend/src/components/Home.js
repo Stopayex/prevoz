@@ -86,8 +86,7 @@ function Home() {
     useEffect(() => {
         try {
             if (rides.length === 0) {
-                setInfo("Find rides");
-                setIsReady(true)
+                setInfo("No rides found");
             } else {
                 setInfo("Find rides");
                 setIsReady(true)
@@ -102,9 +101,9 @@ function Home() {
         <>
             {isReady ?
 
-                <div className={"py-10 float-left w-3/5 space-y-5"}>
+                <div className={"py-10 float-right w-5/6 space-y-5"}>
                     {isSuccess ? <Navigate to={"/search/" + from + "/" + to + "/" + date}/> : ""}
-                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">Find rides</p>
+                    <p className="text-tertiary text-3xl font-bold mb-5 text-center">Find rides</p>
                     <Card>
                         <div className={"grid grid-cols-2 gap-5 mb-3"}>
                             <Select id={"from"} name={"From"} onChange={(event) => setFrom(event.target.value)}
@@ -118,10 +117,10 @@ function Home() {
                         </div>
                         <div className={"mt-5"}>
                             <label
-                                className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                                className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                                 {info}
                             </label>
-                            <Button text="Search" icon="bi bi-search" type="submit" btnClick={search}/>
+                            <Button text="Home" icon="bi bi-search" type="submit" btnClick={search}/>
                         </div>
 
                     </Card>
@@ -133,20 +132,20 @@ function Home() {
                         <div className={"grid grid-cols-3"}>
                             <div>
                                 <Link to={"/search/Maribor/Ljubljana/" + today}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].today}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[0].today}</p>
                                     <p className={"text-grey text-sm"}>Today</p>
                                 </Link>
 
                             </div>
                             <div>
                                 <Link to={"/search/Maribor/Ljubljana/" + tomorrow}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].tomorrow}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[0].tomorrow}</p>
                                     <p className={"text-grey text-sm"}>Tomorrow</p>
                                 </Link>
                             </div>
                             <div>
                                 <Link to={"/search/Maribor/Ljubljana/" + dayAfter}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].dayAfter}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[0].dayAfter}</p>
                                     <p className={"text-grey text-sm"}>After tomorrow</p>
                                 </Link>
                             </div>
@@ -160,19 +159,19 @@ function Home() {
                         <div className={"grid grid-cols-3"}>
                             <div>
                                 <Link to={"/search/Ljubljana/Maribor/" + today}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].today}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[1].today}</p>
                                     <p className={"text-grey text-sm"}>Today</p>
                                 </Link>
                             </div>
                             <div>
                                 <Link to={"/search/Ljubljana/Maribor/" + tomorrow}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].tomorrow}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[1].tomorrow}</p>
                                     <p className={"text-grey text-sm"}>Tomorrow</p>
                                 </Link>
                             </div>
                             <div>
                                 <Link to={"/search/Ljubljana/Maribor/" + dayAfter}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].dayAfter}</p>
+                                    <p className={"text-lg font-bold"}>{statistics[1].dayAfter}</p>
                                     <p className={"text-grey text-sm"}>After tomorrow</p>
                                 </Link>
                             </div>

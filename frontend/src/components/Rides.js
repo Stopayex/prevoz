@@ -33,8 +33,8 @@ function Rides() {
         <>
             {!userContext.user ? <Navigate replace to="/login"/> : ""}
             {isReady ?
-                <div className={"py-10 float-left w-3/5"}>
-                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">My rides</p>
+                <div className={"py-10 float-right w-5/6"}>
+                    <p className="text-tertiary text-3xl font-bold mb-5 text-center">My rides</p>
 
                     <div className="mb-5">
                         <Link to="/add">
@@ -42,7 +42,7 @@ function Rides() {
                         </Link>
                     </div>
 
-                    <div className={"space-y-5"}>
+                    <div className={"flex overflow-x-scroll flex-row space-x-5 py-5 pl-5"}>
                         {rides.map((ride) => (
                             <RideCard ride={ride}/>
                         ))}

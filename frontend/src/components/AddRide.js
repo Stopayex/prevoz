@@ -119,7 +119,7 @@ function AddRide() {
                     </div>
                         <div className="">
                             <label
-                                className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                                className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                                 {info}
                             </label>
                             <Button text="Add" icon="bi bi-car-front-fill" type="submit"/>

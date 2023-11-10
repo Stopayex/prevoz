@@ -37,9 +37,9 @@ function Login() {
 
     return (
 
-        <div className={"py-10 float-left w-3/5"}>
+        <div className={"py-10 float-right w-5/6"}>
             {userContext.user ? <Navigate replace to="/"/> : ""}
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Login</p>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-center">Login</p>
             <Card>
                 <form onSubmit={(e) => {
                     console.log("submit");
@@ -57,7 +57,7 @@ function Login() {
                                         onChange={(event) => setPassword(event.target.value)} value={password}/>
                         </div>
                         <div className="">
-                            <label className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                            <label className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                                 {info}
                             </label>
                             <Button text="Login" icon="bi bi-box-arrow-in-right" type="submit" btnClick={login}/>
