@@ -111,33 +111,33 @@ function Profile() {
 
     return (
         <>
-            {!userContext.user && !id ? <Navigate replace to="/login"/> : ""}
+            {!userContext.user && !id ? <Navigate replace to="/prijava"/> : ""}
             {isReady ?
                 <div className="py-10 float-left w-3/5 space-y-5">
-                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">Profile</p>
+                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">Profil</p>
                     <Card>
                         <div
                             className="bg-greyish rounded-full w-32 h-32 mx-auto flex justify-center items-center mb-5">
                             <img className="w-24 h-24 " src={logo} alt="Logo"/>
                         </div>
 
-                        <p className="text-2xl font-bold mb-5">{user.username}</p>
+                        <p className="text-2xl font-bold mb-5  text-tertiary">{user.username}</p>
 
-                        <div className={"grid grid-cols-2"}>
+                        <div className={"grid grid-cols-2  text-tertiary"}>
                             <div className={"col-span-1 mb-5"}>
-                                <p className="block text-base mb-1.5">Name</p>
+                                <p className="block text-base mb-1.5">Ime</p>
                                 <p className="text-xl font-bold">{user.name}</p>
                             </div>
                             <div className={"col-span-1 mb-5"}>
-                                <p className="block text-base mb-1.5">Surname</p>
+                                <p className="block text-base mb-1.5">Priimek</p>
                                 <p className="text-xl font-bold">{user.surname}</p>
                             </div>
                             <div className={"col-span-1 mb-5"}>
-                                <p className="block text-base mb-1.5">Email</p>
+                                <p className="block text-base mb-1.5">Elektronska pošta</p>
                                 <p className="text-xl font-bold">{user.email}</p>
                             </div>
                             <div className={"col-span-1 mb-5"}>
-                                <p className="block text-base mb-1.5">Phone number</p>
+                                <p className="block text-base mb-1.5">Telefonska številka</p>
                                 <p className="text-xl font-bold">{user.phoneNumber}</p>
                             </div>
                         </div>
@@ -145,13 +145,13 @@ function Profile() {
                         {!id ?
                             <div className="mt-5 flex gap-5">
                                 <div className="w-full">
-                                    <Link to='/edit'>
-                                        <Button text={"Edit"} icon="bi bi-pencil-square"/>
+                                    <Link to='/uredi'>
+                                        <Button text={"Uredi"} icon="bi bi-pencil-square"/>
                                     </Link>
                                 </div>
                                 <div className={"w-full"}>
-                                    <Link to='/logout'>
-                                        <Button text={"Log out"} icon="bi bi-box-arrow-right"/>
+                                    <Link to='/odjava'>
+                                        <Button text={"Odjava"} icon="bi bi-box-arrow-right"/>
                                     </Link>
                                 </div>
                             </div>
@@ -162,19 +162,19 @@ function Profile() {
                         <Card>
                             <div className="text-base text-tertiary text-left font-light">
                                 <label className="block text-base mb-3.5 text-tertiary text-left">
-                                    Comment
+                                    Komentar
                                 </label>
                                 <textarea className={"bg-secondary-dark rounded-xl w-full py-3.5 px-4 text-silver"}
                                           rows={3} value={comment}
                                           onChange={(e) => setComment(e.target.value)}>
                             </textarea>
-                                <Button text={"Comment"} icon="bi bi-chat-left-text" btnClick={addComment}/>
+                                <Button text={"Komentiraj"} icon="bi bi-chat-left-text" btnClick={addComment}/>
                             </div>
                         </Card>
                         : ""
                     }
 
-                    <div className="overflow-y-scroll max-h-96 space-y-5" ref={frame}>
+                    <div className="flex overflow-x-scroll flex-col h-52 space-y-5" ref={frame}>
                         {comments.map((comment) => (
                             <Card>
 

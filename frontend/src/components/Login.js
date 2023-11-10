@@ -39,7 +39,7 @@ function Login() {
 
         <div className={"py-10 float-left w-3/5"}>
             {userContext.user ? <Navigate replace to="/"/> : ""}
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Login</p>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Prijava</p>
             <Card>
                 <form onSubmit={(e) => {
                     console.log("submit");
@@ -48,22 +48,22 @@ function Login() {
                 }}>
                     <div className="space-y-3">
                         <div>
-                            <InputField id={"username"} name={"Username"} placeholder={"John"} type={"text"}
+                            <InputField id={"username"} name={"Uporabnisko ime"} placeholder={"John"} type={"text"}
                                         onChange={(event) => setUsername(event.target.value)} value={username}/>
                         </div>
                         <div>
-                            <InputField id={"password"} name={"Password"} placeholder={"*******"}
+                            <InputField id={"password"} name={"Geslo"} placeholder={"*******"}
                                         type={"password"}
                                         onChange={(event) => setPassword(event.target.value)} value={password}/>
                         </div>
                         <div className="">
-                            <label className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                            <label className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                                 {info}
                             </label>
-                            <Button text="Login" icon="bi bi-box-arrow-in-right" type="submit" btnClick={login}/>
+                            <Button text="Prijava" icon="bi bi-box-arrow-in-right" type="submit" btnClick={login}/>
                         </div>
                         <label className="block text-base mb-3.5 text-tertiary text-left text-sm font-extralight text-center text-primary-light underline">
-                            <Link to='/register'>Don't have an account? Register here...</Link>
+                            <Link to='/registracija'>Don't have an account? Register here...</Link>
                         </label>
                     </div>
                 </form>

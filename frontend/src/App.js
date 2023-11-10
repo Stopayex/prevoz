@@ -30,7 +30,7 @@ function App() {
                 setUserContext: updateUserData
             }}>
                 <div className="App">
-                    <div className={"bg-gradient-to-t from-secondary-light to-secondary-dark  min-h-screen"}>
+                    <div className={"bg-gradient-to-t from-secondary-light to-secondary-dark min-h-screen"}>
                         <div className={"grid grid-cols-3"}>
                             <div className={"col-span-1 float-right"}>
                                 <Navbar/>
@@ -38,17 +38,17 @@ function App() {
                             <div className={"col-span-2 float-left"}>
                                 <Routes>
                                     <Route path={"/"} element={<Home/>}></Route>
-                                    <Route path="/profile" element={<Profile/>}></Route>
-                                    <Route path="/user/:id" element={<Profile/>}></Route>
-                                    <Route path="/login" exact element={<Login/>}></Route>
-                                    <Route path="/logout" exact element={<Logout/>}></Route>
-                                    <Route path="/register" element={<Register/>}></Route>
-                                    <Route path="/edit" element={<Edit/>}></Route>
-                                    <Route path="/rides" element={<Rides/>}></Route>
-                                    <Route path="/ride/:id" element={<Ride/>}></Route>
-                                    <Route path="/ride/edit/:id" element={<EditRide/>}></Route>
-                                    <Route path="/add" element={<AddRide/>}></Route>
-                                    <Route path="/search/:from/:to/:date" element={<Search/>}></Route>
+                                    <Route path="/profil" element={<Profile/>}></Route>
+                                    <Route path="/uporabnik/:id" element={<Profile/>}></Route>
+                                    <Route path="/prijava" exact element={<Login/>}></Route>
+                                    <Route path="/odjava" exact element={<Logout/>}></Route>
+                                    <Route path="/registracija" element={<Register/>}></Route>
+                                    <Route path="/uredi" element={<Edit/>}></Route>
+                                    <Route path="/prevozi" element={<Rides/>}></Route>
+                                    <Route path="/prevoz/:id" element={<Ride/>}></Route>
+                                    <Route path="/prevoz/uredi/:id" element={<EditRide/>}></Route>
+                                    <Route path="/dodaj" element={<AddRide/>}></Route>
+                                    <Route path="/iskanje/:from/:to/:date" element={<Search/>}></Route>
 
                                 </Routes>
                             </div>

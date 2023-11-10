@@ -81,7 +81,7 @@ function AddRide() {
             {/*{userContext.user ? <Navigate replace to="/"/> : ""}*/}
             {isSuccess ? <Navigate replace to={`/ride/${id}`}/> : null}
 
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit ride</p>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Uredi prevoz</p>
             <Card>
                 <form onSubmit={(e) => {
                     console.log("submit");
@@ -90,45 +90,45 @@ function AddRide() {
                 }}>
                     <div className="grid grid-cols-2 gap-x-5">
                         <div className="mb-3">
-                            <Select id={"from" } name={"From"} onChange={(event) => setFrom(event.target.value)} value={from}/>
+                            <Select id={"from" } name={"Od"} onChange={(event) => setFrom(event.target.value)} value={from}/>
                         </div>
                         <div className="mb-3">
-                            <Select id={"to" } name={"To"} onChange={(event) => setTo(event.target.value)} value={to}/>
+                            <Select id={"to" } name={"Do"} onChange={(event) => setTo(event.target.value)} value={to}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"date"} name={"Date"} placeholder={"2021-05-15"}
+                            <InputField id={"date"} name={"Datum"} placeholder={"2021-05-15"}
                                         type={"date"}
                                         onChange={(event) => setDate(event.target.value)} value={date}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"time"} name={"Time"} placeholder={"12:00"}
+                            <InputField id={"time"} name={"Čas"} placeholder={"12:00"}
                                         type={"time"}
                                         onChange={(event) => setTime(event.target.value)} value={time}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"seats"} name={"Seats"} placeholder={"4"}
+                            <InputField id={"seats"} name={"Sedeži"} placeholder={"4"}
                                         type={"number"}
                                         onChange={(event) => setSeats(event.target.value)} value={seats}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"price"} name={"Price"} placeholder={"10"}
+                            <InputField id={"price"} name={"Cena"} placeholder={"10"}
                                         type={"number"}
                                         onChange={(event) => setPrice(event.target.value)} value={price}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"car"} name={"Car"} placeholder={"BMW"}
+                            <InputField id={"car"} name={"Avto"} placeholder={"BMW"}
                                         type={"text"}
                                         onChange={(event) => setCar(event.target.value)} value={car}/>
                         </div>
                         <div className="mb-3">
-                            <InputField id={"phoneNumber"} name={"Phone number"} placeholder={"123456789"}
+                            <InputField id={"phoneNumber"} name={"Avtomobilska številka"} placeholder={"123456789"}
                                         type={"text"}
                                         onChange={(event) => setPhoneNumber(event.target.value)}
                                         value={phoneNumber}/>
                         </div>
                         <div className="mb-3 col-span-2">
                             <label className="block text-base mb-3.5 text-tertiary text-left">
-                                Notes
+                                Opombe
                             </label>
                             <textarea className={"bg-secondary-dark rounded-xl w-full py-3.5 px-4 text-silver"}
                                       rows={5} value={notes}
@@ -140,10 +140,10 @@ function AddRide() {
                     </div>
                     <div className="">
                         <label
-                            className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                            className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                             {info}
                         </label>
-                        <Button text="Save" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/>
+                        <Button text="Shrani" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/>
                     </div>
                 </form>
             </Card>

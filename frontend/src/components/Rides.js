@@ -31,14 +31,14 @@ function Rides() {
 
     return (
         <>
-            {!userContext.user ? <Navigate replace to="/login"/> : ""}
+            {!userContext.user ? <Navigate replace to="/prijava"/> : ""}
             {isReady ?
                 <div className={"py-10 float-left w-3/5"}>
-                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">My rides</p>
+                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">Moji prevozi</p>
 
                     <div className="mb-5">
-                        <Link to="/add">
-                            <Button text={"Add"} icon="bi bi-car-front-fill"/>
+                        <Link to="/dodaj">
+                            <Button text={"Dodaj"} icon="bi bi-car-front-fill"/>
                         </Link>
                     </div>
 

@@ -7,7 +7,7 @@ function RideCard({ ride }) {
 
     return (
         <div className="cursor-pointer transform transition duration-200 hover:scale-105">
-            <Link to={"/ride/" + ride._id}>
+            <Link to={"/prevoz/" + ride._id}>
                 <Card>
                     <div className="flex flex-row">
                         <div className="flex-col">
@@ -18,7 +18,7 @@ function RideCard({ ride }) {
                                 {ride.date.split('-').reverse().join('/')}<span className="text-grey">,</span> {ride.time}
                             </p>
                             <div className="block text-base text-tertiary text-left font-light">
-                                <Link to={"/user/" + ride.user._id} className="flex items-center float-left">
+                                <Link to={"/uporabnik/" + ride.user._id} className="flex items-center float-left">
                                     <p className="bg-greyish rounded-full w-5 h-5 mx-auto flex justify-center mr-1.5">
                                         <img className="w-4 h-4" src={logo} alt="Logo" />
                                     </p>

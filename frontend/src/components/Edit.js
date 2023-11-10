@@ -62,7 +62,7 @@ function Edit() {
 
         <div className={"py-10 float-left w-3/5"}>
             {/*{isSuccess ? <Navigate replace to="/login"/> : ""}*/}
-            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit</p>
+            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Uredi</p>
             <Card>
                 <form onSubmit={(e) => {
                     e.preventDefault();
@@ -70,39 +70,39 @@ function Edit() {
                 }}>
                     <div className="space-y-3">
                         <div>
-                            <InputField id={"email"} name={"Email"} placeholder={"john.doe@gmail.com"} type={"text"}
+                            <InputField id={"email"} name={"Elektronski naslov"} placeholder={"john.doe@gmail.com"} type={"text"}
                                         onChange={(event) => setEmail(event.target.value)} value={email}/>
                         </div>
                         <div>
-                            <InputField id={"password"} name={"Password"} placeholder={"*******"}
+                            <InputField id={"password"} name={"Geslo"} placeholder={"*******"}
                                         type={"password"}
                                         onChange={(event) => setPassword(event.target.value)} value={password}/>
                         </div>
                         <div>
-                            <InputField id={"confirmPassword"} name={"Confirm password"} placeholder={"*******"}
+                            <InputField id={"confirmPassword"} name={"Potrdi geslo"} placeholder={"*******"}
                                         type={"password"}
                                         onChange={(event) => setConfirmPassword(event.target.value)}
                                         value={confirmPassword}/>
                         </div>
                         <div>
-                            <InputField id={"name"} name={"Name"} placeholder={"John"} type={"text"}
+                            <InputField id={"name"} name={"Ime"} placeholder={"John"} type={"text"}
                                         onChange={(event) => setName(event.target.value)} value={name}/>
                         </div>
                         <div>
-                            <InputField id={"surname"} name={"Surname"} placeholder={"Doe"} type={"text"}
+                            <InputField id={"surname"} name={"Priimek"} placeholder={"Doe"} type={"text"}
                                         onChange={(event) => setSurname(event.target.value)} value={surname}/>
                         </div>
                         <div>
-                            <InputField id={"phoneNumber"} name={"Phone number"} placeholder={"123456789"} type={"text"}
+                            <InputField id={"phoneNumber"} name={"Telefonska številka"} placeholder={"123456789"} type={"text"}
                                         onChange={(event) => setPhoneNumber(event.target.value)}
                                         value={phoneNumber}/>
                         </div>
                         <div className="">
                             <label
-                                className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
+                                className="block text-base mb-3.5 text-tertiary text-left text-sm text-center">
                                 {info}
                             </label>
-                            <Button text="Save" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/>
+                            <Button text="Shrani" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/>
                         </div>
                     </div>
                 </form>
