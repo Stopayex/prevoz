@@ -8,7 +8,7 @@ const Select = (props) => {
             </label>
             <select
                 id={props.id}
-                className="bg-secondary-dark rounded-xl w-full py-2.5 md:py-3.5 px-4 text-tertiary shadow"
+                className="bg-secondary-dark rounded-xl w-full py-2.5 md:py-3.5 px-4 text-tertiary shadow appearance-none"
                 onChange={(event) => props.onChange(event)}
                 value={props.value}
             >
