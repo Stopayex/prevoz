@@ -1,0 +1,7 @@
+**/classes_gen
+**/source_gen
+**/source_gen.caches
+
+/.mps/workspace.xml
+/.mps/vcs.xml
+
