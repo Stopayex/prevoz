@@ -2,14 +2,9 @@ import React, {useEffect, useState} from 'react';
 import Card from "./Card";
 import InputField from "./InputField";
 import Button from "./Button";
-import RideCard from "./RideCard";
 import api from "../axios";
 import Select from "./Select";
-import {Navigate} from 'react-router-dom'
-import {Link} from "react-router-dom";
-
-// import {useHistory} from 'react-router-dom'
-
+import {Link, Navigate} from 'react-router-dom'
 
 function Home() {
     const [rides, setRides] = useState([]);
@@ -20,9 +15,7 @@ function Home() {
     const [isSuccess, setIsSuccess] = useState(false);
     const [isReady, setIsReady] = useState(false);
     const [statistics, setStatistics] = useState([{today: 0, tomorrow: 0, dayAfter: 0}, {
-        today: 0,
-        tomorrow: 0,
-        dayAfter: 0
+        today: 0, tomorrow: 0, dayAfter: 0
     }]);
     const search = () => {
         if (from === "" || to === "" || date === "") {
@@ -55,14 +48,12 @@ function Home() {
             .catch((err) => {
                 console.log(err);
             })
-        console.log(statistics);
     }
 
     const getRides = () => {
         api.get("rides/")
             .then((res) => {
                 setRides(res.data);
-                console.log(res.data);
             })
             .catch((err) => {
                 console.log(err);
@@ -98,92 +89,36 @@ function Home() {
     }, [statistics, rides]);
 
 
-    return (
-        <>
-            {isReady ?
-
-                <div className={"py-10 float-left w-3/5 space-y-5"}>
-                    {isSuccess ? <Navigate to={"/search/" + from + "/" + to + "/" + date}/> : ""}
-                    <p className="text-tertiary text-3xl font-bold mb-5 text-left">Find rides</p>
-                    <Card>
-                        <div className={"grid grid-cols-2 gap-5 mb-3"}>
-                            <Select id={"from"} name={"From"} onChange={(event) => setFrom(event.target.value)}
-                                    value={from}/>
-                            <Select id={"to"} name={"To"} onChange={(event) => setTo(event.target.value)} value={to}/>
-                        </div>
-                        <div>
-                            <InputField id={"date"} name={"Date"} placeholder={"2021-05-15"}
-                                        type={"date"}
-                                        onChange={(event) => setDate(event.target.value)} value={date}/>
-                        </div>
-                        <div className={"mt-5"}>
-                            <label
-                                className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">
-                                {info}
-                            </label>
-                            <Button text="Search" icon="bi bi-search" type="submit" btnClick={search}/>
-                        </div>
-
-                    </Card>
-
-                    <Card>
-                        <p className="block text-lg mb-3.5 text-tertiary text-left font-bold">
-                            Maribor <span className="text-grey">></span> Ljubljana
-                        </p>
-                        <div className={"grid grid-cols-3"}>
-                            <div>
-                                <Link to={"/search/Maribor/Ljubljana/" + today}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].today}</p>
-                                    <p className={"text-grey text-sm"}>Today</p>
-                                </Link>
-
-                            </div>
-                            <div>
-                                <Link to={"/search/Maribor/Ljubljana/" + tomorrow}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].tomorrow}</p>
-                                    <p className={"text-grey text-sm"}>Tomorrow</p>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={"/search/Maribor/Ljubljana/" + dayAfter}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[0].dayAfter}</p>
-                                    <p className={"text-grey text-sm"}>After tomorrow</p>
-                                </Link>
-                            </div>
-                        </div>
-                    </Card>
-
-                    <Card>
-                        <p className="block text-lg mb-3.5 text-tertiary text-left font-bold">
-                            Ljubljana <span className="text-grey">></span> Maribor
-                        </p>
-                        <div className={"grid grid-cols-3"}>
-                            <div>
-                                <Link to={"/search/Ljubljana/Maribor/" + today}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].today}</p>
-                                    <p className={"text-grey text-sm"}>Today</p>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={"/search/Ljubljana/Maribor/" + tomorrow}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].tomorrow}</p>
-                                    <p className={"text-grey text-sm"}>Tomorrow</p>
-                                </Link>
-                            </div>
-                            <div>
-                                <Link to={"/search/Ljubljana/Maribor/" + dayAfter}>
-                                    <p className={"text-lg font-bold text-tertiary"}>{statistics[1].dayAfter}</p>
-                                    <p className={"text-grey text-sm"}>After tomorrow</p>
-                                </Link>
-                            </div>
-                        </div>
-                    </Card>
+    return (<>
+        {isReady ? <div className={"py-10 float-left w-3/5 space-y-5"}>
+            {isSuccess ? <Navigate to={"/search/" + from + "/" + to + "/" + date}/> : ""}
+            <p className="text-tertiary text-3xl font-bold mb-5 text-left">Find rides</p>
+            <Card>
+                <div className={"grid grid-cols-2 gap-5 mb-3"}>
+                    <Select id={"from"} name={"From"} onChange={(event) => setFrom(event.target.value)} value={from}/>
+                    <Select id={"to"} name={"To"} onChange={(event) => setTo(event.target.value)} value={to}/>
                 </div>
-                :
-                ""
-            }
-        </>
-    );
+                <InputField id={"date"} name={"Date"} placeholder={"2021-05-15"} type={"date"} onChange={(event) => setDate(event.target.value)} value={date}/>
+                <div className={"mt-5"}><label className="block text-base mb-3.5 text-tertiary text-left text-sm font-thin text-center">{info}</label><Button text="Search" icon="bi bi-search" type="submit" btnClick={search}/></div>
+            </Card>
+            <Card>
+                <p className="block text-lg mb-3.5 text-tertiary text-left font-bold">Maribor <span className="text-grey">></span> Ljubljana</p>
+                <div className={"grid grid-cols-3"}>
+                    <Link to={"/search/Maribor/Ljubljana/" + today}><p className={"text-lg font-bold text-tertiary"}>{statistics[0].today}</p><p className={"text-grey text-sm"}>Today</p></Link>
+                    <Link to={"/search/Maribor/Ljubljana/" + tomorrow}><p className={"text-lg font-bold text-tertiary"}>{statistics[0].tomorrow}</p><p className={"text-grey text-sm"}>Tomorrow</p></Link>
+                    <Link to={"/search/Maribor/Ljubljana/" + dayAfter}><p className={"text-lg font-bold text-tertiary"}>{statistics[0].dayAfter}</p><p className={"text-grey text-sm"}>After tomorrow</p></Link>
+                </div>
+            </Card>
+            <Card>
+                <p className="block text-lg mb-3.5 text-tertiary text-left font-bold">Ljubljana <span className="text-grey">></span> Maribor</p>
+                <div className={"grid grid-cols-3"}>
+                    <Link to={"/search/Ljubljana/Maribor/" + today}><p className={"text-lg font-bold text-tertiary"}>{statistics[1].today}</p><p className={"text-grey text-sm"}>Today</p></Link>
+                    <Link to={"/search/Ljubljana/Maribor/" + tomorrow}><p className={"text-lg font-bold text-tertiary"}>{statistics[1].tomorrow}</p><p className={"text-grey text-sm"}>Tomorrow</p></Link>
+                    <Link to={"/search/Ljubljana/Maribor/" + dayAfter}><p className={"text-lg font-bold text-tertiary"}>{statistics[1].dayAfter}</p><p className={"text-grey text-sm"}>After tomorrow</p></Link>
+                </div>
+            </Card>
+        </div> : ""}
+    </>);
 }
 
 export default Home;

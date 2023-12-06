@@ -1,11 +1,11 @@
-import { useEffect, useContext } from 'react';
-import { UserContext } from '../userContext';
-import { Navigate } from 'react-router-dom';
+import {useContext, useEffect} from 'react';
+import {UserContext} from '../userContext';
+import {Navigate} from 'react-router-dom';
 import api from "../axios";
 
-function Logout(){
+function Logout() {
     const userContext = useContext(UserContext);
-    useEffect(function(){
+    useEffect(function () {
         const logout = () => {
             api.post("users/logout")
                 .then((res) => {
@@ -18,9 +18,7 @@ function Logout(){
         logout();
     }, []);
 
-    return (
-        <Navigate replace to="/" />
-    );
+    return (<Navigate replace to="/"/>);
 }
 
 export default Logout;
