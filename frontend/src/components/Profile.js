@@ -17,87 +17,54 @@ function Profile() {
 
     const addComment = () => {
         if (!id) {
-            api.post("comments", {
-                comment: comment, on: userContext.user._id
-            })
-                .then((res) => {
-                    setComment("");
-                    getComments();
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.post("comments", {comment: comment, on: userContext.user._id}).then((res) => {
+                setComment("");
+                getComments();
+            }).catch((err) => {console.log(err);})
         } else {
-            api.post("comments", {
-                comment: comment, on: id
-            })
-                .then((res) => {
-                    setComment("");
-                    getComments();
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.post("comments", {comment: comment, on: id}).then((res) => {
+                setComment("");
+                getComments();
+            }).catch((err) => {console.log(err);})
         }
     }
 
     const getComments = () => {
         if (!userContext.user) return;
         if (!id) {
-            api.get("comments/" + userContext.user._id)
-                .then((res) => {
-                    setComments(res.data);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.get("comments/" + userContext.user._id).then((res) => {
+                setComments(res.data);
+            }).catch((err) => {console.log(err);})
         } else {
-            api.get("comments/" + id)
-                .then((res) => {
-                    setComments(res.data);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.get("comments/" + id).then((res) => {
+                setComments(res.data);
+            }).catch((err) => {console.log(err);})
         }
     }
 
     const getUser = () => {
         if (!id) {
-            api.get("users/profile")
-                .then((res) => {
-                    setUser(res.data);
-                    setIsReady(true);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.get("users/profile").then((res) => {
+                setUser(res.data);
+                setIsReady(true);
+            }).catch((err) => {console.log(err);})
         } else {
-            api.get("users/" + id)
-                .then((res) => {
-                    setUser(res.data);
-                    setIsReady(true);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.get("users/" + id).then((res) => {
+                setUser(res.data);
+                setIsReady(true);
+            }).catch((err) => {console.log(err);})
         }
     }
 
     useEffect(function () {
-        if (userContext.user) {
-            getUser();
-        }
+        if (userContext.user) {getUser();}
         getUser()
         getComments()
-
     }, [id]);
 
     useEffect(() => {
         let reference = frame;
-        if (reference.current) {
-            reference.current.scrollTop = reference.current.scrollHeight;
-        }
+        if (reference.current) {reference.current.scrollTop = reference.current.scrollHeight;}
     }, [frame, comments]);
 
     return (<>

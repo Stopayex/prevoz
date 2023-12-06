@@ -14,23 +14,15 @@ function Ride() {
     const {id} = useParams()
 
     const deleteRide = () => {
-        api.delete("rides/" + id)
-            .then((res) => {
-                setIsSuccess(true);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        api.delete("rides/" + id).then((res) => {
+            setIsSuccess(true);
+        }).catch((err) => {console.log(err);})
     }
 
     const getRide = () => {
-        api.get("rides/" + id)
-            .then((res) => {
-                setRide(res.data);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        api.get("rides/" + id).then((res) => {
+            setRide(res.data);
+        }).catch((err) => {console.log(err);})
     }
 
     useEffect(function () {
@@ -58,7 +50,7 @@ function Ride() {
                     <div className={"col-span-1 mb-5"}><p className="block text-base mb-1.5">Seats</p><p className="text-xl font-bold">{ride.seats}</p></div>
                     <div className={"col-span-1 mb-5"}><p className="block text-base mb-1.5">Price</p><p className="text-xl font-bold">{ride.price}</p></div>
                     <div className={"col-span-1 mb-5"}><p className="block text-base mb-1.5">Car</p><p className="text-xl font-bold">{ride.car}</p></div>
-                    <div className={"col-span-1 mb-5"}><p className="block text-base mb-1.5">Phone number</p><p className="text-xl font-bold">{ride.price}</p></div>
+                    <div className={"col-span-1 mb-5"}><p className="block text-base mb-1.5">Phone number</p><p className="text-xl font-bold">{ride.phoneNumber}</p></div>
                     <div className={"col-span-2 mb-5"}><p className="block text-base mb-1.5">Notes</p><p className="text-xl font-bold">{ride.notes}</p></div>
                     <div className={"col-span-2 mx-auto"}>{!isOwner && ride.user ? <Link to={"/user/" + ride.user._id} className="flex items-center float-center"><p className="bg-greyish rounded-full w-5 h-5 mx-auto flex justify-center mr-1.5"><img className="w-4 h-4" src={logo} alt="Logo"/></p>{ride.user.username}</Link> : null}</div>
                 </div>

@@ -10,13 +10,9 @@ function Rides() {
     const {date} = useParams()
 
     const search = () => {
-        api.get("rides/search/" + from + "/" + to + "/" + date)
-            .then((res) => {
-                setRides(res.data);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        api.get("rides/search/" + from + "/" + to + "/" + date).then((res) => {
+            setRides(res.data);
+        }).catch((err) => {console.log(err);})
     }
     useEffect(() => {
         search();

@@ -17,14 +17,10 @@ import Search from "./components/Search";
 
 function App() {
     const [user, setUser] = useState(localStorage.user ? JSON.parse(localStorage.user) : null);
-    const updateUserData = (userInfo) => {
-        localStorage.setItem("user", JSON.stringify(userInfo));
-        setUser(userInfo);
-    }
+    const updateUserData = (userInfo) => {localStorage.setItem("user", JSON.stringify(userInfo));setUser(userInfo);}
+
     return (<BrowserRouter>
-        <UserContext.Provider value={{
-            user: user, setUserContext: updateUserData
-        }}>
+        <UserContext.Provider value={{user: user, setUserContext: updateUserData}}>
             <div className="App">
                 <div className={"bg-gradient-to-t from-secondary-light to-secondary-dark  min-h-screen"}>
                     <div className={"grid grid-cols-3"}>

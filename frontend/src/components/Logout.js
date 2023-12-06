@@ -7,17 +7,12 @@ function Logout() {
     const userContext = useContext(UserContext);
     useEffect(function () {
         const logout = () => {
-            api.post("users/logout")
-                .then((res) => {
-                    userContext.setUserContext(null);
-                })
-                .catch((err) => {
-                    console.log(err);
-                })
+            api.post("users/logout").then((res) => {
+                userContext.setUserContext(null);
+            }).catch((err) => {console.log(err);})
         }
         logout();
     }, []);
-
     return (<Navigate replace to="/"/>);
 }
 

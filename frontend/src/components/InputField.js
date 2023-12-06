@@ -8,8 +8,7 @@ const InputField = (props) => {
 }
 
 InputField.defaultProps = {
-    onChange: () => {
-    }
+    onChange: () => {}
 }
 
 export default InputField;

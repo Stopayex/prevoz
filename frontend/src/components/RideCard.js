@@ -4,7 +4,6 @@ import Card from "./Card";
 import logo from "../img/logo.png";
 
 function RideCard({ride}) {
-
     return (<div className="cursor-pointer transform transition duration-200 hover:scale-105">
         <Link to={"/ride/" + ride._id}>
             <Card>

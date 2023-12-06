@@ -9,16 +9,13 @@ function Rides() {
     const [rides, setRides] = useState([]);
     const [isReady, setIsReady] = useState(false);
     const userContext = useContext(UserContext);
+
     const getRides = () => {
         if (!userContext.user) return;
-        api.get("rides/user/" + userContext.user._id)
-            .then((res) => {
-                setRides(res.data);
-                setIsReady(true);
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+        api.get("rides/user/" + userContext.user._id).then((res) => {
+            setRides(res.data);
+            setIsReady(true);
+        }).catch((err) => {console.log(err);})
     }
 
     useEffect(() => {

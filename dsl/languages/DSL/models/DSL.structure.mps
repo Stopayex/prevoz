@@ -130,6 +130,12 @@
       <property role="20kJfa" value="login" />
       <ref role="20lvS9" node="1DzyiJux887" resolve="Login" />
     </node>
+    <node concept="1TJgyj" id="7Ot2$8oynpL" role="1TKVEi">
+      <property role="IQ2ns" value="9015373308061382257" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="logout" />
+      <ref role="20lvS9" node="7Ot2$8oyno1" resolve="Logout" />
+    </node>
     <node concept="1TJgyj" id="1DzyiJuxKdu" role="1TKVEi">
       <property role="IQ2ns" value="1901514289190470494" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -161,6 +167,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="rideAdd" />
       <ref role="20lvS9" node="5OICYhM5WoG" resolve="RideAdd" />
+    </node>
+    <node concept="1TJgyj" id="4PyMWyak0ZC" role="1TKVEi">
+      <property role="IQ2ns" value="5576243350812495848" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="rideEdit" />
+      <ref role="20lvS9" node="4PyMWyak0YD" resolve="RideEdit" />
     </node>
     <node concept="1TJgyj" id="1DzyiJuvpvN" role="1TKVEi">
       <property role="IQ2ns" value="1901514289189853171" />
@@ -258,6 +270,12 @@
       <property role="20kJfa" value="titleRideSearch" />
       <ref role="20lvS9" node="5OICYhM7dDJ" resolve="TitleRideSearch" />
     </node>
+    <node concept="1TJgyj" id="7Ot2$8orJ8S" role="1TKVEi">
+      <property role="IQ2ns" value="9015373308059644472" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="titleRides" />
+      <ref role="20lvS9" node="7Ot2$8orJ8P" resolve="TitleRides" />
+    </node>
     <node concept="1TJgyj" id="6bsFH3m5dXy" role="1TKVEi">
       <property role="IQ2ns" value="7123760922561404770" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -347,6 +365,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="buttonSearch" />
       <ref role="20lvS9" node="5OICYhM7dER" resolve="ButtonSearch" />
+    </node>
+    <node concept="1TJgyj" id="7Ot2$8oHUnm" role="1TKVEi">
+      <property role="IQ2ns" value="9015373308064409046" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="buttonDelete" />
+      <ref role="20lvS9" node="7Ot2$8oHUnj" resolve="ButtonDelete" />
     </node>
   </node>
   <node concept="1TIwiD" id="5OICYhM7dCX">
@@ -463,7 +487,7 @@
     <node concept="1TJgyi" id="5OICYhM7dEu" role="1TKVEl">
       <property role="IQ2nx" value="6714484296018352798" />
       <property role="TrG5h" value="seats" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="5OICYhM7dEv">
@@ -593,7 +617,7 @@
     <node concept="1TJgyi" id="5OICYhM7dFG" role="1TKVEl">
       <property role="IQ2nx" value="6714484296018352876" />
       <property role="TrG5h" value="car" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="6bsFH3m6eZo">
@@ -783,6 +807,12 @@
       <property role="20kJfa" value="titleEdit" />
       <ref role="20lvS9" node="6bsFH3m6eZx" resolve="TitleEdit" />
     </node>
+    <node concept="1TJgyj" id="7Ot2$8oywWY" role="1TKVEi">
+      <property role="IQ2ns" value="9015373308061421374" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="titleLogout" />
+      <ref role="20lvS9" node="7Ot2$8oywVe" resolve="TitleLogout" />
+    </node>
     <node concept="1TJgyj" id="1DzyiJuvp8i" role="1TKVEi">
       <property role="IQ2ns" value="1901514289189851666" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -812,6 +842,24 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="comment" />
       <ref role="20lvS9" node="6bsFH3m6eZI" resolve="Comment" />
+    </node>
+    <node concept="1TJgyj" id="4PyMWyaaOvE" role="1TKVEi">
+      <property role="IQ2ns" value="5576243350810085354" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="password" />
+      <ref role="20lvS9" node="4PyMWyaaOsr" resolve="Password" />
+    </node>
+    <node concept="1TJgyj" id="4PyMWyaaOvU" role="1TKVEi">
+      <property role="IQ2ns" value="5576243350810085370" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="confirmPassword" />
+      <ref role="20lvS9" node="4PyMWyaaOsu" resolve="ConfirmPassword" />
+    </node>
+    <node concept="1TJgyj" id="7Ot2$8oju2S" role="1TKVEi">
+      <property role="IQ2ns" value="9015373308057477304" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="username" />
+      <ref role="20lvS9" node="7Ot2$8oju1d" resolve="Username" />
     </node>
     <node concept="1TJgyj" id="1DzyiJuvp8U" role="1TKVEi">
       <property role="IQ2ns" value="1901514289189851706" />
@@ -1174,6 +1222,107 @@
     <node concept="25R33" id="1DzyiJu$YPm" role="25R1y">
       <property role="3tVfz5" value="1901514289191316822" />
       <property role="TrG5h" value="light" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PyMWyaaOsr">
+    <property role="EcuMT" value="5576243350810085147" />
+    <property role="TrG5h" value="Password" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4PyMWyaaOss" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="4PyMWyaaOst" role="1TKVEl">
+      <property role="IQ2nx" value="5576243350810085149" />
+      <property role="TrG5h" value="password" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PyMWyaaOsu">
+    <property role="EcuMT" value="5576243350810085150" />
+    <property role="TrG5h" value="ConfirmPassword" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4PyMWyaaOsv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="4PyMWyaaOsw" role="1TKVEl">
+      <property role="IQ2nx" value="5576243350810085152" />
+      <property role="TrG5h" value="confirmPassword" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4PyMWyak0YD">
+    <property role="EcuMT" value="5576243350812495785" />
+    <property role="TrG5h" value="RideEdit" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4PyMWyak0YE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="4PyMWyak0YF" role="1TKVEl">
+      <property role="IQ2nx" value="5576243350812495787" />
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ot2$8oju1d">
+    <property role="EcuMT" value="9015373308057477197" />
+    <property role="TrG5h" value="Username" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7Ot2$8oju1e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7Ot2$8oju1f" role="1TKVEl">
+      <property role="IQ2nx" value="9015373308057477199" />
+      <property role="TrG5h" value="username" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ot2$8orJ8P">
+    <property role="EcuMT" value="9015373308059644469" />
+    <property role="TrG5h" value="TitleRides" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7Ot2$8orJ8Q" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7Ot2$8orJ8R" role="1TKVEl">
+      <property role="IQ2nx" value="9015373308059644471" />
+      <property role="TrG5h" value="titleRides" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ot2$8oyno1">
+    <property role="EcuMT" value="9015373308061382145" />
+    <property role="TrG5h" value="Logout" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7Ot2$8oyno2" role="1TKVEl">
+      <property role="IQ2nx" value="9015373308061382146" />
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ot2$8oywVe">
+    <property role="EcuMT" value="9015373308061421262" />
+    <property role="TrG5h" value="TitleLogout" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7Ot2$8oywVf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7Ot2$8oywVg" role="1TKVEl">
+      <property role="IQ2nx" value="9015373308061421264" />
+      <property role="TrG5h" value="titleLogout" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ot2$8oHUnj">
+    <property role="EcuMT" value="9015373308064409043" />
+    <property role="TrG5h" value="ButtonDelete" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7Ot2$8oHUnk" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7Ot2$8oHUnl" role="1TKVEl">
+      <property role="IQ2nx" value="9015373308064409045" />
+      <property role="TrG5h" value="buttonDelete" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
