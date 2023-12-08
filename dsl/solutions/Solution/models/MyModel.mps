@@ -155,12 +155,12 @@
       <concept id="7123760922561671172" name="DSL.structure.ButtonSave" flags="ng" index="2OL5Vk">
         <property id="7123760922561671174" name="buttonSave" index="2OL5Vm" />
       </concept>
-      <concept id="1901514289189853611" name="DSL.structure.LongButtons" flags="ng" index="347x20" />
+      <concept id="1901514289189853611" name="DSL.structure.LongButtons" flags="ng" index="347x20">
+        <property id="1901514289189853614" name="longButtons" index="347x25" />
+      </concept>
       <concept id="1901514289189853606" name="DSL.structure.Rides" flags="ng" index="347x2d">
         <property id="1901514289189853609" name="url" index="347x22" />
-        <child id="1901514289189853626" name="longButtons" index="347x2h" />
         <child id="1901514289189853628" name="listOrientation" index="347x2n" />
-        <child id="1901514289189853648" name="onNavbar" index="347x3V" />
       </concept>
       <concept id="1901514289189853631" name="DSL.structure.ListOrientation" flags="ng" index="347x2k" />
       <concept id="1901514289189853616" name="DSL.structure.OnNavbar" flags="ng" index="347x2r">
@@ -188,7 +188,6 @@
       </concept>
       <concept id="1901514289190306192" name="DSL.structure.Ride" flags="ng" index="34TKyV">
         <property id="1901514289190306195" name="url" index="34TKyS" />
-        <child id="1901514289190306204" name="longButtons" index="34TKyR" />
       </concept>
       <concept id="1901514289190306311" name="DSL.structure.Login" flags="ng" index="34TKGG">
         <property id="1901514289190306312" name="url" index="34TKGz" />
@@ -200,11 +199,15 @@
         <property id="1901514289190635008" name="url" index="34UwWF" />
         <child id="1901514289190635010" name="onNavbar" index="34UwWD" />
       </concept>
-      <concept id="1901514289191316378" name="DSL.structure.Navbar" flags="ng" index="34W6aL" />
+      <concept id="1901514289191316378" name="DSL.structure.Navbar" flags="ng" index="34W6aL">
+        <property id="1901514289191316381" name="position" index="34W6aQ" />
+      </concept>
       <concept id="1901514289191316771" name="DSL.structure.Owner" flags="ng" index="34W6g8">
         <property id="1901514289191316774" name="owner" index="34W6gd" />
       </concept>
-      <concept id="1901514289191316815" name="DSL.structure.Theme" flags="ng" index="34W6h$" />
+      <concept id="1901514289191316815" name="DSL.structure.Theme" flags="ng" index="34W6h$">
+        <property id="1901514289191316818" name="theme" index="34W6hT" />
+      </concept>
       <concept id="1901514289191316497" name="DSL.structure.Colors" flags="ng" index="34W6kU">
         <property id="1901514289191316502" name="primaryDark" index="34W6kX" />
         <property id="1901514289191316500" name="primaryLight" index="34W6kZ" />
@@ -214,15 +217,15 @@
       </concept>
       <concept id="1901514289191128393" name="DSL.structure.Profile" flags="ng" index="34WChy">
         <property id="1901514289191128396" name="url" index="34WChB" />
-        <child id="1901514289191128398" name="showComments" index="34WCh_" />
-        <child id="1901514289191128403" name="onNavbar" index="34WChS" />
         <child id="1901514289191128400" name="longButtons" index="34WChV" />
       </concept>
       <concept id="1901514289191128142" name="DSL.structure.User" flags="ng" index="34WCl_">
         <property id="1901514289191128145" name="url" index="34WClU" />
         <child id="1901514289191128151" name="showComments" index="34WClW" />
       </concept>
-      <concept id="1901514289191128153" name="DSL.structure.ShowComments" flags="ng" index="34WClM" />
+      <concept id="1901514289191128153" name="DSL.structure.ShowComments" flags="ng" index="34WClM">
+        <property id="1901514289191128156" name="showComments" index="34WClR" />
+      </concept>
       <concept id="1901514289191128636" name="DSL.structure.Search" flags="ng" index="34WCsn">
         <property id="1901514289191128639" name="url" index="34WCsk" />
         <child id="1901514289191128643" name="info" index="34WCtC" />
@@ -262,205 +265,202 @@
       </concept>
     </language>
   </registry>
-  <node concept="JeWeV" id="5OICYhM5rG$">
-    <property role="JermV" value="RidesApp" />
-    <property role="Jermc" value="Rides" />
-    <node concept="347x2d" id="1DzyiJuw9n5" role="347x95">
-      <property role="347x22" value="/prevozi" />
-      <node concept="347x20" id="1DzyiJuzDan" role="347x2h" />
-      <node concept="347x2k" id="1DzyiJuzDap" role="347x2n" />
-      <node concept="347x2r" id="7Ot2$8opdMR" role="347x3V">
-        <property role="347x2s" value="true" />
-      </node>
+  <node concept="JeWeV" id="41GtFTLg2DU">
+    <property role="JermV" value="RideApp" />
+    <property role="Jermc" value="Prevozi" />
+    <node concept="34W6kU" id="41GtFTLg2DV" role="34W6iv">
+      <property role="34W6kZ" value="#FFC0CB" />
+      <property role="34W6kX" value="#800080" />
     </node>
-    <node concept="JcBBj" id="1DzyiJuw9nh" role="2OM4WP">
-      <node concept="JcB_E" id="4PyMWya24le" role="2OM76M">
-        <property role="JcB_P" value="Od" />
-      </node>
-      <node concept="JcB_R" id="4PyMWya2AcN" role="2OM76S">
-        <property role="JcB_L" value="Do" />
-      </node>
-      <node concept="JcB_M" id="4PyMWya2AcP" role="2OM76Z">
-        <property role="JcB_W" value="Datum" />
-      </node>
-      <node concept="JcB_X" id="4PyMWya2AcT" role="2OM76B">
-        <property role="JcB_Z" value="Cas" />
-      </node>
-      <node concept="JcB_S" id="4PyMWya3K0i" role="2OM75g">
-        <property role="JcB_U" value="Sedezi" />
-      </node>
-      <node concept="JcB_V" id="4PyMWya3RM_" role="2OM75q">
-        <property role="JcB_5" value="Cena" />
-      </node>
-      <node concept="JcB$e" id="4PyMWya3RMB" role="2OM755">
-        <property role="JcB$8" value="Avto" />
-      </node>
-      <node concept="JcB_6" id="4PyMWya3RMD" role="2OM75L">
-        <property role="JcB_0" value="Telefonska stevilka" />
-      </node>
-      <node concept="JcB_1" id="4PyMWya47uS" role="2OM75Y">
-        <property role="JcB_3" value="Opombe" />
-      </node>
-      <node concept="JcBAd" id="4PyMWya47uU" role="2OM769">
-        <property role="JcBAf" value="Dodaj prevoz" />
-      </node>
-      <node concept="JcB_l" id="4PyMWya5L3s" role="2OM74W">
-        <property role="JcB_n" value="Uredi" />
-      </node>
-      <node concept="JcB_g" id="4PyMWya6zDF" role="2OM74I">
-        <property role="JcB_i" value="Dodaj" />
-      </node>
-      <node concept="JcB_j" id="4PyMWya6zDH" role="2OM4V1">
-        <property role="JcB_t" value="Iskanje" />
-      </node>
-      <node concept="JcBA8" id="4PyMWyahtVa" role="2OM766">
-        <property role="JcBAa" value="Uredi prevoz" />
-      </node>
-      <node concept="JcBBp" id="7Ot2$8ocBq_" role="2OM764">
-        <property role="JcBA$" value="Prevoz" />
-      </node>
-      <node concept="JcB_c" id="7Ot2$8oe8_A" role="2OM75G">
-        <property role="JcB_e" value="Danes" />
-      </node>
-      <node concept="JcB_f" id="7Ot2$8oe8_C" role="2OM74r">
-        <property role="JcB_9" value="Jutri" />
-      </node>
-      <node concept="JcB_a" id="7Ot2$8oe8_E" role="2OM74b">
-        <property role="JcB_k" value="Pojustrisnjem" />
-      </node>
-      <node concept="JcBAb" id="7Ot2$8om9vi" role="2OM76d">
-        <property role="JcBAl" value="Iskanje prevozov" />
-      </node>
-      <node concept="1_sZxR" id="7Ot2$8otN_j" role="1_sZxU">
-        <property role="1_sZxP" value="Prevozi" />
-      </node>
-      <node concept="1_EEYh" id="7Ot2$8oKmZv" role="1_EEYk">
-        <property role="1_EEYn" value="Izbrisi" />
-      </node>
-    </node>
-    <node concept="347xGE" id="1DzyiJuw9nn" role="347xVo">
-      <node concept="2OL448" id="1DzyiJuzDav" role="347xGJ">
-        <property role="2OL44a" value="Profil" />
-      </node>
-      <node concept="2OL44b" id="1DzyiJuzDax" role="347xGH">
-        <property role="2OL44d" value="Prijava" />
-      </node>
-      <node concept="2OL44Y" id="1DzyiJuBiVi" role="347xGr">
-        <property role="2OL44w" value="Comment" />
-      </node>
-      <node concept="2OL44e" id="4PyMWy9ZZt6" role="347xGy">
-        <property role="2OL44K" value="Registracija" />
-      </node>
-      <node concept="2OL44P" id="4PyMWya01Mf" role="347xGT">
-        <property role="TrG5h" value="Ime" />
-      </node>
-      <node concept="2OL44S" id="4PyMWya01Mh" role="347xGN">
-        <property role="2OL44U" value="Priimek" />
-      </node>
-      <node concept="2OL44V" id="4PyMWyaaHB2" role="347xGO">
-        <property role="2OL44X" value="E-pošta" />
-      </node>
-      <node concept="JcB_6" id="4PyMWyaaHB4" role="347xGc">
-        <property role="JcB_0" value="Telefonska stevilka" />
-      </node>
-      <node concept="37ioNj" id="4PyMWyacUrB" role="37ioKy">
-        <property role="37ioNl" value="Geslo" />
-      </node>
-      <node concept="37ioNm" id="4PyMWyacUrD" role="37ioKM">
-        <property role="37ioNC" value="Ponovi geslo" />
-      </node>
-      <node concept="2OL5Vk" id="4PyMWyaeFJH" role="347xH7">
-        <property role="2OL5Vm" value="Shrani" />
-      </node>
-      <node concept="1_keCf" id="7Ot2$8om9vk" role="1_keFU">
-        <property role="1_keCd" value="Uporabniško ime" />
-      </node>
-      <node concept="JcB_l" id="7Ot2$8om9vm" role="347xGh">
-        <property role="JcB_n" value="Uredi" />
-      </node>
-      <node concept="2OL44x" id="7Ot2$8om9vo" role="347xHI">
-        <property role="2OL44z" value="Odjava" />
-      </node>
-      <node concept="2OL44$" id="7Ot2$8om9vq" role="347xHU">
-        <property role="2OL44A" value="Prijava" />
-      </node>
-      <node concept="2OL5Vh" id="7Ot2$8om9vs" role="347xHP">
-        <property role="2OL5Vj" value="Registracija" />
-      </node>
-      <node concept="2OL44L" id="7Ot2$8ovv71" role="347xGA">
-        <property role="2OL44N" value="Uredi profil" />
-      </node>
-      <node concept="1__Kic" id="7Ot2$8o$4EW" role="1__KlW">
-        <property role="1__Kii" value="Odjava" />
-      </node>
-    </node>
-    <node concept="34TKyV" id="1DzyiJuzDaf" role="34T8DW">
-      <property role="34TKyS" value="/prevoz" />
-      <node concept="347x20" id="1DzyiJuBiVg" role="34TKyR" />
-    </node>
-    <node concept="34TKGG" id="1DzyiJuzDah" role="34T8Dd">
-      <property role="34TKGz" value="/prijava" />
-    </node>
-    <node concept="34W6kU" id="1DzyiJu_Lzb" role="34W6iv">
-      <property role="34W6kZ" value="#ff473d" />
-      <property role="34W6kX" value="#d32b2a" />
-    </node>
-    <node concept="34WCsn" id="1DzyiJu_Lzd" role="34W6iM">
+    <node concept="34WCsn" id="41GtFTLg2DW" role="34W6iM">
       <property role="34WCsk" value="/iskanje" />
-      <node concept="347x2r" id="1DzyiJu_Lzv" role="34WCtE">
-        <property role="347x2s" value="true" />
-      </node>
-      <node concept="34WCtH" id="1DzyiJu_Lzx" role="34WCtC">
-        <property role="34WCty" value="Select one" />
+      <node concept="347x2r" id="41GtFTLhJtp" role="34WCtE" />
+      <node concept="34WCtH" id="41GtFTLlI9F" role="34WCtC">
+        <property role="34WCty" value="Isci med poljubnimi prevozi" />
       </node>
     </node>
-    <node concept="34W6aL" id="1DzyiJu_Lzf" role="34W6id" />
-    <node concept="34WChy" id="1DzyiJu_Lzh" role="34W6iA">
-      <property role="34WChB" value="/profil" />
-      <node concept="34WClM" id="1DzyiJuAymJ" role="34WCh_" />
-      <node concept="347x20" id="1DzyiJuAymL" role="34WChV" />
-      <node concept="347x2r" id="1DzyiJuAymN" role="34WChS">
-        <property role="347x2s" value="true" />
-      </node>
+    <node concept="34TKyV" id="41GtFTLg2DX" role="34T8DW">
+      <property role="34TKyS" value="/prevoz" />
     </node>
-    <node concept="34WCl_" id="1DzyiJu_Lzj" role="34W6iE">
-      <property role="34WClU" value="/uporabnik" />
-      <node concept="34WClM" id="1DzyiJuAymP" role="34WClW" />
+    <node concept="347x2d" id="41GtFTLg2DY" role="347x95">
+      <property role="347x22" value="/prevozi" />
+      <node concept="347x2k" id="41GtFTLonpu" role="347x2n" />
     </node>
-    <node concept="34W6g8" id="1DzyiJu_Lzp" role="34W6sD">
-      <property role="34W6gd" value="Ridex" />
+    <node concept="34W6g8" id="41GtFTLgnBc" role="34W6sD">
+      <property role="34W6gd" value="Stopayexx" />
     </node>
-    <node concept="Jemp2" id="1DzyiJu_Lzr" role="34W6jq">
+    <node concept="Jemp2" id="41GtFTLgG_B" role="34W6jq">
       <property role="Jempd" value="3001" />
     </node>
-    <node concept="34W6h$" id="1DzyiJu_Lzt" role="34W6ja" />
-    <node concept="34UwNk" id="1DzyiJuAymT" role="34UwZe">
-      <property role="34UwWF" value="/uredi" />
-      <node concept="347x2r" id="1DzyiJuBiVe" role="34UwWD">
-        <property role="347x2s" value="true" />
+    <node concept="34W6h$" id="41GtFTLgG_D" role="34W6ja">
+      <property role="34W6hT" value="1DzyiJu$YPm/light" />
+    </node>
+    <node concept="JeKB$" id="41GtFTLgG_F" role="JdvAr">
+      <node concept="Jemp2" id="41GtFTLh000" role="JcGDQ">
+        <property role="Jempd" value="3001" />
+      </node>
+      <node concept="34W6nO" id="41GtFTLh002" role="34W6nR">
+        <property role="34W6n9" value="http://localhost" />
       </node>
     </node>
-    <node concept="Jemn8" id="4PyMWy9ZZt8" role="Jdv_B">
-      <property role="Jemnb" value="/dodaj" />
-      <node concept="347x2r" id="4PyMWya01Mb" role="347x9k">
-        <property role="347x2s" value="true" />
+    <node concept="34W6aL" id="41GtFTLhjqn" role="34W6id">
+      <property role="34W6aQ" value="1DzyiJu$YIx/right" />
+    </node>
+    <node concept="34WChy" id="41GtFTLhAOH" role="34W6iA">
+      <property role="34WChB" value="/profil" />
+      <node concept="347x20" id="41GtFTLhJtB" role="34WChV">
+        <property role="347x25" value="true" />
       </node>
     </node>
-    <node concept="34TKGJ" id="4PyMWya01Md" role="34T8DP">
-      <property role="34TKGI" value="/registracija" />
+    <node concept="34WCl_" id="41GtFTLhAOJ" role="34W6iE">
+      <property role="34WClU" value="/uporabnik" />
+      <node concept="34WClM" id="41GtFTLqy3t" role="34WClW">
+        <property role="34WClR" value="true" />
+      </node>
     </node>
-    <node concept="37cGhx" id="4PyMWyamzo0" role="37cGgw">
-      <property role="37cGhz" value="/prevoz/uredi" />
+    <node concept="34TKGG" id="41GtFTLhAOL" role="34T8Dd">
+      <property role="34TKGz" value="/prijava" />
     </node>
-    <node concept="1__7L3" id="7Ot2$8o$4EY" role="1__7KN">
+    <node concept="1__7L3" id="41GtFTLhAON" role="1__7KN">
       <property role="1__7L0" value="/odjava" />
     </node>
-    <node concept="JeKB$" id="1OEAlWK9OJ9" role="JdvAr">
-      <node concept="Jemp2" id="1OEAlWK9OJb" role="JcGDQ">
-        <property role="Jempd" value="3000" />
+    <node concept="34TKGJ" id="41GtFTLhAOP" role="34T8DP">
+      <property role="34TKGI" value="/registracija" />
+    </node>
+    <node concept="34UwNk" id="41GtFTLhAOR" role="34UwZe">
+      <property role="34UwWF" value="/uredi" />
+      <node concept="347x2r" id="41GtFTLhJtn" role="34UwWD">
+        <property role="347x2s" value="true" />
       </node>
-      <node concept="34W6nO" id="1OEAlWK9OJd" role="34W6nR">
-        <property role="34W6n9" value="http://localhost" />
+    </node>
+    <node concept="Jemn8" id="41GtFTLhAOZ" role="Jdv_B">
+      <property role="Jemnb" value="/dodaj" />
+      <node concept="347x2r" id="41GtFTLiY53" role="347x9k">
+        <property role="347x2s" value="true" />
+      </node>
+    </node>
+    <node concept="37cGhx" id="41GtFTLhAP1" role="37cGgw">
+      <property role="37cGhz" value="/prevoz/uredi" />
+    </node>
+    <node concept="347xGE" id="41GtFTLhJsT" role="347xVo">
+      <node concept="2OL448" id="41GtFTLhJsV" role="347xGJ">
+        <property role="2OL44a" value="Profil" />
+      </node>
+      <node concept="2OL44b" id="41GtFTLhJsX" role="347xGH">
+        <property role="2OL44d" value="Prijava" />
+      </node>
+      <node concept="2OL44e" id="41GtFTLhJsZ" role="347xGy">
+        <property role="2OL44K" value="Registracija" />
+      </node>
+      <node concept="2OL44L" id="41GtFTLhJt1" role="347xGA">
+        <property role="2OL44N" value="Uredi" />
+      </node>
+      <node concept="1__Kic" id="41GtFTLhJt3" role="1__KlW">
+        <property role="1__Kii" value="Odjava" />
+      </node>
+      <node concept="2OL44P" id="41GtFTLhJt5" role="347xGT">
+        <property role="TrG5h" value="Ime" />
+      </node>
+      <node concept="2OL44S" id="41GtFTLhJt7" role="347xGN">
+        <property role="2OL44U" value="Priimek" />
+      </node>
+      <node concept="2OL44V" id="41GtFTLhJt9" role="347xGO">
+        <property role="2OL44X" value="E posta" />
+      </node>
+      <node concept="JcB_6" id="41GtFTLhJtb" role="347xGc">
+        <property role="JcB_0" value="Telefonska številka" />
+      </node>
+      <node concept="2OL44Y" id="41GtFTLhJtd" role="347xGr">
+        <property role="2OL44w" value="Komentar" />
+      </node>
+      <node concept="37ioNj" id="41GtFTLhJtf" role="37ioKy">
+        <property role="37ioNl" value="Geslo" />
+      </node>
+      <node concept="37ioNm" id="41GtFTLhJth" role="37ioKM">
+        <property role="37ioNC" value="Ponovi geslo" />
+      </node>
+      <node concept="1_keCf" id="41GtFTLhJtj" role="1_keFU">
+        <property role="1_keCd" value="Uporabniško ime" />
+      </node>
+      <node concept="JcB_l" id="41GtFTLhJtl" role="347xGh">
+        <property role="JcB_n" value="Uredi" />
+      </node>
+      <node concept="2OL44x" id="41GtFTLhJtr" role="347xHI">
+        <property role="2OL44z" value="Odjava" />
+      </node>
+      <node concept="2OL44$" id="41GtFTLhJtt" role="347xHU">
+        <property role="2OL44A" value="Prijava" />
+      </node>
+      <node concept="2OL5Vh" id="41GtFTLhJtv" role="347xHP">
+        <property role="2OL5Vj" value="Registracija" />
+      </node>
+      <node concept="2OL5Vk" id="41GtFTLhJtx" role="347xH7">
+        <property role="2OL5Vm" value="Shrani" />
+      </node>
+    </node>
+    <node concept="JcBBj" id="41GtFTLhJtz" role="2OM4WP">
+      <node concept="JcBBp" id="41GtFTLhJtD" role="2OM764">
+        <property role="JcBA$" value="Prevoz" />
+      </node>
+      <node concept="JcBA8" id="41GtFTLhJtF" role="2OM766">
+        <property role="JcBAa" value="Uredi prevoz" />
+      </node>
+      <node concept="JcBAd" id="41GtFTLhJtH" role="2OM769">
+        <property role="JcBAf" value="Dodaj prevoz" />
+      </node>
+      <node concept="JcBAb" id="41GtFTLhJtJ" role="2OM76d">
+        <property role="JcBAl" value="Iskanje prevozov" />
+      </node>
+      <node concept="1_sZxR" id="41GtFTLhJtL" role="1_sZxU">
+        <property role="1_sZxP" value="Prevozi" />
+      </node>
+      <node concept="JcB_E" id="41GtFTLhJtN" role="2OM76M">
+        <property role="JcB_P" value="Od" />
+      </node>
+      <node concept="JcB_R" id="41GtFTLhJtP" role="2OM76S">
+        <property role="JcB_L" value="Do" />
+      </node>
+      <node concept="JcB_M" id="41GtFTLhJtR" role="2OM76Z">
+        <property role="JcB_W" value="Datum" />
+      </node>
+      <node concept="JcB_X" id="41GtFTLhJtT" role="2OM76B">
+        <property role="JcB_Z" value="Cas" />
+      </node>
+      <node concept="JcB_S" id="41GtFTLhJtV" role="2OM75g">
+        <property role="JcB_U" value="Sedezi" />
+      </node>
+      <node concept="JcB_V" id="41GtFTLhJtX" role="2OM75q">
+        <property role="JcB_5" value="Cena" />
+      </node>
+      <node concept="JcB$e" id="41GtFTLhJtZ" role="2OM755">
+        <property role="JcB$8" value="Avtomobil" />
+      </node>
+      <node concept="JcB_6" id="41GtFTLhJu1" role="2OM75L">
+        <property role="JcB_0" value="Telefonska stevilka" />
+      </node>
+      <node concept="JcB_1" id="41GtFTLhJu3" role="2OM75Y">
+        <property role="JcB_3" value="Opombe" />
+      </node>
+      <node concept="JcB_c" id="41GtFTLhJu5" role="2OM75G">
+        <property role="JcB_e" value="Danes" />
+      </node>
+      <node concept="JcB_f" id="41GtFTLhJu7" role="2OM74r">
+        <property role="JcB_9" value="Jutri" />
+      </node>
+      <node concept="JcB_a" id="41GtFTLhJu9" role="2OM74b">
+        <property role="JcB_k" value="Pojutrisnjem" />
+      </node>
+      <node concept="JcB_l" id="41GtFTLhJub" role="2OM74W">
+        <property role="JcB_n" value="Uredi" />
+      </node>
+      <node concept="JcB_g" id="41GtFTLhJud" role="2OM74I">
+        <property role="JcB_i" value="Dodaj" />
+      </node>
+      <node concept="JcB_j" id="41GtFTLhJuf" role="2OM4V1">
+        <property role="JcB_t" value="Iskanje" />
+      </node>
+      <node concept="1_EEYh" id="41GtFTLhJuh" role="1_EEYk">
+        <property role="1_EEYn" value="Brisi" />
       </node>
     </node>
   </node>
