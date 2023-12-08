@@ -4,6 +4,7 @@ import {UserContext} from "../userContext";
 import {Link, Navigate} from "react-router-dom";
 import Button from "./Button";
 import RideCard from "./RideCard";
+import Layout from "./Layout";
 
 function Rides() {
     const [rides, setRides] = useState([]);
@@ -24,11 +25,11 @@ function Rides() {
 
     return (<>
         {!userContext.user ? <Navigate replace to="/login"/> : ""}
-        {isReady ? <div className={"py-10 float-left w-3/5"}>
+        {isReady ? <Layout>
             <p className="text-tertiary text-3xl font-bold mb-5 text-left">My rides</p>
             <div className="mb-5"><Link to="/add"><Button text={"Add"} icon="bi bi-car-front-fill"/></Link></div>
             <div className={"space-y-5"}>{rides.map((ride) => (<RideCard ride={ride}/>))}</div>
-        </div> : " "}
+        </Layout> : " "}
     </>);
 }
 

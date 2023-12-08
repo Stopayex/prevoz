@@ -4,6 +4,7 @@ import api from "../axios";
 import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
+import Layout from "./Layout";
 
 
 function Register() {
@@ -22,7 +23,7 @@ function Register() {
         }).catch((err) => {console.log(err);setInfo(err.response.data.message)})
     }
 
-    return (<div className={"py-10 float-left w-3/5"}>
+    return (<Layout>
         {isSuccess ? <Navigate replace to="/login"/> : ""}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Register</p>
         <Card><form onSubmit={(e) => {e.preventDefault();register();}}>
@@ -35,7 +36,7 @@ function Register() {
                 <label className="block mb-3.5 text-sm font-extralight text-center text-primary-light underline"><Link to='/login'>Already have an account? Login here...</Link>ł</label>
             </div>
         </form></Card>
-    </div>);
+    </Layout>);
 }
 
 export default Register;

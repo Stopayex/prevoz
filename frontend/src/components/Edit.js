@@ -4,6 +4,7 @@ import api from "../axios";
 import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
+import Layout from "./Layout";
 
 function Edit() {
     const [password, setPassword] = useState("");
@@ -36,7 +37,7 @@ function Edit() {
         if (userContext.user) {getUser();}
     }, []);
 
-    return (<div className={"py-10 float-left w-3/5"}>
+    return (<Layout>
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit</p>
         <Card><form onSubmit={(e) => {e.preventDefault();edit();}}>
             <div className="space-y-3">
@@ -52,7 +53,7 @@ function Edit() {
                 </div>
             </div>
         </form></Card>
-    </div>);
+    </Layout>);
 }
 
 export default Edit;

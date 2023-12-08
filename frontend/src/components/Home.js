@@ -5,6 +5,7 @@ import Button from "./Button";
 import api from "../axios";
 import Select from "./Select";
 import {Link, Navigate} from 'react-router-dom'
+import Layout from "./Layout";
 
 function Home() {
     const [rides, setRides] = useState([]);
@@ -65,7 +66,7 @@ function Home() {
     }, [statistics, rides]);
 
     return (<>
-        {isReady ? <div className={"py-10 float-left w-3/5 space-y-5"}>
+        {isReady ? <Layout>
             {isSuccess ? <Navigate to={"/search/" + from + "/" + to + "/" + date}/> : ""}
             <p className="text-tertiary text-3xl font-bold mb-5 text-left">Find rides</p>
             <Card>
@@ -98,7 +99,7 @@ function Home() {
             <div className="fixed bottom-1 left-0 right-0 mx-auto text-center text-grey text-xs">
                 <p className="mb-1">© Rides by Ridex</p>
             </div>
-        </div> : ""}
+        </Layout> : ""}
     </>);
 }
 

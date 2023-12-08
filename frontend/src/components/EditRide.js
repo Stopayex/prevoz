@@ -6,6 +6,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
 import Select from "./Select";
+import Layout from "./Layout";
 
 function EditRide() {
     const [from, setFrom] = useState("");
@@ -50,7 +51,7 @@ function EditRide() {
         if (userContext.user) {getRide();}
     }, [])
 
-    return (<div className={"py-10 float-left w-3/5"}>
+    return (<Layout>
         {isSuccess ? <Navigate replace to={`/ride/${id}`}/> : null}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit ride</p>
         <Card><form onSubmit={(e) => {e.preventDefault();edit();}}>
@@ -67,7 +68,7 @@ function EditRide() {
             </div>
             <div><label className="block mb-3.5 text-tertiary text-sm font-thin text-center">{info}</label><Button text="Save" icon="bi bi-floppy-fill" type="submit" btnClick={edit}/></div>
         </form></Card>
-    </div>);
+    </Layout>);
 }
 
 export default EditRide;

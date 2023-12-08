@@ -5,6 +5,7 @@ import api from "../axios";
 import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
+import Layout from "./Layout";
 
 function Login() {
     const [username, setUsername] = useState("");
@@ -25,7 +26,7 @@ function Login() {
         }).catch((err) => {console.log(err);})
     }
 
-    return (<div className={"py-10 float-left w-3/5"}>
+    return (<Layout>
         {userContext.user ? <Navigate replace to="/"/> : ""}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Login</p>
         <Card><form onSubmit={(e) => {e.preventDefault();login();}}>
@@ -39,7 +40,7 @@ function Login() {
                 <label className="blockmb-3.5 text-sm font-extralight text-center text-primary-light underline"><Link to='/register'>Don't have an account? Register here...</Link></label>
             </div>
         </form></Card>
-    </div>);
+    </Layout>);
 }
 
 export default Login;

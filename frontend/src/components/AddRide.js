@@ -5,6 +5,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
 import Select from "./Select";
+import Layout from "./Layout";
 
 function AddRide() {
     const [from, setFrom] = useState("Ljubljana");
@@ -31,7 +32,7 @@ function AddRide() {
         }).catch((err) => {console.log(err);})
     }
 
-    return (<div className={"py-10 float-left w-3/5"}>
+    return (<Layout>
         {isSuccess ? <Navigate replace to="/rides"/> : ""}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Add ride</p>
         <Card><form onSubmit={(e) => {e.preventDefault();add();}}>
@@ -48,7 +49,7 @@ function AddRide() {
             </div>
             <div><label className="block mb-3.5 text-tertiary text-sm font-thin text-center">{info}</label><Button text="Add" icon="bi bi-car-front-fill" type="submit"/></div>
         </form></Card>
-    </div>);
+    </Layout>);
 }
 
 export default AddRide;

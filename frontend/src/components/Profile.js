@@ -5,6 +5,7 @@ import api from "../axios";
 import Card from "./Card";
 import logo from "../img/logo.png";
 import Button from "./Button";
+import Layout from "./Layout";
 
 function Profile() {
     const userContext = useContext(UserContext);
@@ -69,7 +70,7 @@ function Profile() {
 
     return (<>
         {!userContext.user && !id ? <Navigate replace to="/login"/> : ""}
-        {isReady ? <div className="py-10 float-left w-3/5 space-y-5">
+        {isReady ? <Layout>
             <p className="text-tertiary text-3xl font-bold mb-5 text-left">Profile</p>
             <Card>
                 <div className="bg-greyish rounded-full w-32 h-32 mx-auto flex justify-center items-center mb-5"><img className="w-24 h-24 " src={logo} alt="Logo"/></div>
@@ -101,7 +102,7 @@ function Profile() {
                     </div>
                 </Card>))}
             </div>
-        </div> : ""}
+        </Layout> : ""}
     </>);
 }
 

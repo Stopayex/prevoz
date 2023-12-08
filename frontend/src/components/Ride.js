@@ -5,6 +5,7 @@ import api from "../axios";
 import Card from "./Card";
 import logo from "../img/logo.png";
 import Button from "./Button";
+import Layout from "./Layout";
 
 function Ride() {
     const userContext = useContext(UserContext);
@@ -38,7 +39,7 @@ function Ride() {
     }, [ride]);
 
     return (<>
-        {ride.date !== undefined ? <div className="py-10 float-left w-3/5">
+        {ride.date !== undefined ? <Layout>
             {isSuccess ? <Navigate replace to="/rides"/> : ""}
             <p className="text-tertiary text-3xl font-bold mb-5 text-left">Ride</p>
             <Card>
@@ -59,7 +60,7 @@ function Ride() {
                     <div className={"w-full"}><Button text={"Delete"} icon="bi bi-trash3-fill" btnClick={deleteRide}/></div>
                 </div> : ""}
             </Card>
-        </div> : ""}
+        </Layout> : ""}
     </>);
 }
 

@@ -173,6 +173,12 @@
               </node>
               <node concept="l8MVK" id="4PyMWya1SJ7" role="lcghm" />
             </node>
+            <node concept="lc7rE" id="1OEAlWKhhzx" role="3cqZAp">
+              <node concept="la8eA" id="1OEAlWKhiWm" role="lcghm">
+                <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+              </node>
+              <node concept="l8MVK" id="1OEAlWKhiX$" role="lcghm" />
+            </node>
             <node concept="lc7rE" id="4PyMWya1SJ8" role="3cqZAp">
               <node concept="l8MVK" id="4PyMWya1SJ9" role="lcghm" />
             </node>
@@ -342,7 +348,7 @@
                 <node concept="1bpajm" id="4PyMWya1Wkh" role="3cqZAp" />
                 <node concept="lc7rE" id="4PyMWya1SKB" role="3cqZAp">
                   <node concept="la8eA" id="4PyMWya1SKC" role="lcghm">
-                    <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                    <property role="lacIc" value="return (&lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="4PyMWya1SKD" role="lcghm" />
                 </node>
@@ -1018,7 +1024,7 @@
                 <node concept="1bpajm" id="4PyMWya6IsP" role="3cqZAp" />
                 <node concept="lc7rE" id="4PyMWya6IS6" role="3cqZAp">
                   <node concept="la8eA" id="4PyMWya6J5P" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt;);" />
+                    <property role="lacIc" value="&lt;/Layout&gt;);" />
                   </node>
                   <node concept="l8MVK" id="4PyMWya6J7N" role="lcghm" />
                 </node>
@@ -1222,6 +1228,12 @@
             <property role="lacIc" value="import Card from &quot;./Card&quot;;" />
           </node>
           <node concept="l8MVK" id="7Ot2$8oZhfr" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKhqzc" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKhy6E" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKhy8p" role="lcghm" />
         </node>
         <node concept="lc7rE" id="4PyMWya9k6M" role="3cqZAp">
           <node concept="l8MVK" id="4PyMWya9lLz" role="lcghm" />
@@ -1465,7 +1477,7 @@
             <node concept="1bpajm" id="4PyMWyaaGWh" role="3cqZAp" />
             <node concept="lc7rE" id="4PyMWyaaH16" role="3cqZAp">
               <node concept="la8eA" id="4PyMWyaaH3B" role="lcghm">
-                <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                <property role="lacIc" value="return (&lt;Layout&gt;" />
               </node>
               <node concept="l8MVK" id="4PyMWyaaJ3y" role="lcghm" />
             </node>
@@ -1975,7 +1987,7 @@
             <node concept="1bpajm" id="4PyMWyaemJd" role="3cqZAp" />
             <node concept="lc7rE" id="4PyMWyaen8E" role="3cqZAp">
               <node concept="la8eA" id="4PyMWyaenlu" role="lcghm">
-                <property role="lacIc" value="&lt;/div&gt;);" />
+                <property role="lacIc" value="&lt;/Layout&gt;);" />
               </node>
               <node concept="l8MVK" id="4PyMWyaetwc" role="lcghm" />
             </node>
@@ -2053,6 +2065,12 @@
                 <property role="lacIc" value="import Select from &quot;./Select&quot;;" />
               </node>
               <node concept="l8MVK" id="4PyMWyaj6OW" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="1OEAlWKhz_7" role="3cqZAp">
+              <node concept="la8eA" id="1OEAlWKh$Zk" role="lcghm">
+                <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+              </node>
+              <node concept="l8MVK" id="1OEAlWKh_1L" role="lcghm" />
             </node>
             <node concept="lc7rE" id="4PyMWyafUaV" role="3cqZAp">
               <node concept="l8MVK" id="4PyMWyafX5L" role="lcghm" />
@@ -2369,7 +2387,7 @@
                 <node concept="1bpajm" id="4PyMWyahmqD" role="3cqZAp" />
                 <node concept="lc7rE" id="4PyMWyah6pj" role="3cqZAp">
                   <node concept="la8eA" id="4PyMWyah6pk" role="lcghm">
-                    <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                    <property role="lacIc" value="return (&lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="4PyMWyah6pl" role="lcghm" />
                 </node>
@@ -3045,7 +3063,7 @@
                 <node concept="1bpajm" id="4PyMWyah6uv" role="3cqZAp" />
                 <node concept="lc7rE" id="4PyMWyah6uw" role="3cqZAp">
                   <node concept="la8eA" id="4PyMWyah6ux" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt;);" />
+                    <property role="lacIc" value="&lt;/Layout&gt;);" />
                   </node>
                   <node concept="l8MVK" id="4PyMWyah6uy" role="lcghm" />
                 </node>
@@ -3124,6 +3142,12 @@
             <property role="lacIc" value="import {Link, Navigate} from 'react-router-dom'" />
           </node>
           <node concept="l8MVK" id="7Ot2$8obK0c" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKhAtC" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKhAtD" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKh_0x" role="lcghm" />
         </node>
         <node concept="lc7rE" id="7Ot2$8obNzF" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8obOkr" role="lcghm" />
@@ -3564,7 +3588,7 @@
                 <node concept="1bpajm" id="7Ot2$8oc$fN" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oc$gA" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oc$h5" role="lcghm">
-                    <property role="lacIc" value="{isReady ? &lt;div className={&quot;py-10 float-left w-3/5 space-y-5&quot;}&gt;" />
+                    <property role="lacIc" value="{isReady ? &lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oc$ii" role="lcghm" />
                 </node>
@@ -4530,7 +4554,7 @@
                 <node concept="1bpajm" id="7Ot2$8oex5Z" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oexEt" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oeyV3" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt; : &quot;&quot;}" />
+                    <property role="lacIc" value="&lt;/Layout&gt; : &quot;&quot;}" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oeyWg" role="lcghm" />
                 </node>
@@ -4706,6 +4730,12 @@
           </node>
           <node concept="l8MVK" id="7Ot2$8oi33e" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="1OEAlWKhR0a" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKhR0b" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKhR0c" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="7Ot2$8oi8D2" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8oid5n" role="lcghm" />
         </node>
@@ -4854,7 +4884,7 @@
             <node concept="1bpajm" id="7Ot2$8oiH4Q" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8oiH83" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8oiH9K" role="lcghm">
-                <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                <property role="lacIc" value="return (&lt;Layout&gt;" />
               </node>
               <node concept="l8MVK" id="7Ot2$8oiHaX" role="lcghm" />
             </node>
@@ -5224,7 +5254,7 @@
             <node concept="1bpajm" id="7Ot2$8olqbs" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8olqtf" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8olqAf" role="lcghm">
-                <property role="lacIc" value="&lt;/div&gt;);" />
+                <property role="lacIc" value="&lt;/Layout&gt;);" />
               </node>
               <node concept="l8MVK" id="7Ot2$8olqBt" role="lcghm" />
             </node>
@@ -5420,12 +5450,48 @@
         </node>
         <node concept="3izx1p" id="7Ot2$8opW2Z" role="3cqZAp">
           <node concept="3clFbS" id="7Ot2$8opW31" role="3izTki">
-            <node concept="1bpajm" id="7Ot2$8opXkY" role="3cqZAp" />
-            <node concept="lc7rE" id="7Ot2$8opXlK" role="3cqZAp">
-              <node concept="la8eA" id="7Ot2$8opXmg" role="lcghm">
-                <property role="lacIc" value="return (&lt;nav className=&quot;flex justify-between items-end bg-gray-800 gap-9 px-16 py-10 z-50 flex-col text-tertiary&quot;&gt;" />
+            <node concept="3clFbJ" id="1OEAlWKgZ4E" role="3cqZAp">
+              <node concept="3clFbS" id="1OEAlWKgZ4F" role="3clFbx">
+                <node concept="1bpajm" id="1OEAlWKgZ4G" role="3cqZAp" />
+                <node concept="lc7rE" id="1OEAlWKgZ4H" role="3cqZAp">
+                  <node concept="la8eA" id="1OEAlWKh0Lg" role="lcghm">
+                    <property role="lacIc" value="return (&lt;nav className=&quot;flex justify-between items-end bg-gray-800 gap-9 px-16 py-10 z-50 flex-col text-tertiary&quot;&gt;" />
+                  </node>
+                  <node concept="l8MVK" id="1OEAlWKgZ4J" role="lcghm" />
+                </node>
               </node>
-              <node concept="l8MVK" id="7Ot2$8opXnt" role="lcghm" />
+              <node concept="3clFbC" id="1OEAlWKgZ4K" role="3clFbw">
+                <node concept="2OqwBi" id="1OEAlWKgZ4L" role="3uHU7w">
+                  <node concept="1XH99k" id="1OEAlWKgZ4M" role="2Oq$k0">
+                    <ref role="1XH99l" to="7755:1DzyiJu$YIv" resolve="NavbarPosition" />
+                  </node>
+                  <node concept="2ViDtV" id="1OEAlWKgZ4N" role="2OqNvi">
+                    <ref role="2ViDtZ" to="7755:1DzyiJu$YIw" resolve="left" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1OEAlWKgZ4O" role="3uHU7B">
+                  <node concept="2OqwBi" id="1OEAlWKgZ4P" role="2Oq$k0">
+                    <node concept="117lpO" id="1OEAlWKgZ4Q" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1OEAlWKgZ4R" role="2OqNvi">
+                      <ref role="3Tt5mk" to="7755:1DzyiJu$YQA" resolve="navbar" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1OEAlWKgZ4S" role="2OqNvi">
+                    <ref role="3TsBF5" to="7755:1DzyiJu$YIt" resolve="position" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="1OEAlWKgZ4T" role="9aQIa">
+                <node concept="3clFbS" id="1OEAlWKgZ4U" role="9aQI4">
+                  <node concept="1bpajm" id="1OEAlWKgZ4V" role="3cqZAp" />
+                  <node concept="lc7rE" id="1OEAlWKgZ4W" role="3cqZAp">
+                    <node concept="la8eA" id="1OEAlWKh0MP" role="lcghm">
+                      <property role="lacIc" value="return (&lt;nav className=&quot;flex justify-between items-start bg-gray-800 gap-9 px-16 py-10 z-50 flex-col text-tertiary&quot;&gt;" />
+                    </node>
+                    <node concept="l8MVK" id="1OEAlWKgZ4Y" role="lcghm" />
+                  </node>
+                </node>
+              </node>
             </node>
             <node concept="3izx1p" id="7Ot2$8opXok" role="3cqZAp">
               <node concept="3clFbS" id="7Ot2$8opXom" role="3izTki">
@@ -5981,6 +6047,12 @@
           </node>
           <node concept="l8MVK" id="7Ot2$8owBy2" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="1OEAlWKi7vK" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKi7vL" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKi7vM" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="7Ot2$8owHWH" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8owJrz" role="lcghm" />
         </node>
@@ -6495,7 +6567,7 @@
                 <node concept="1bpajm" id="7Ot2$8oy1aB" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oy1oT" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oy1u8" role="lcghm">
-                    <property role="lacIc" value="{isReady ? &lt;div className=&quot;py-10 float-left w-3/5 space-y-5&quot;&gt;" />
+                    <property role="lacIc" value="{isReady ? &lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oy1vl" role="lcghm" />
                 </node>
@@ -7243,7 +7315,7 @@
                 <node concept="1bpajm" id="7Ot2$8o_GVN" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8o_I1o" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8o_J0I" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt; : &quot;&quot;}" />
+                    <property role="lacIc" value="&lt;/Layout&gt; : &quot;&quot;}" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oAfgK" role="lcghm" />
                 </node>
@@ -7314,6 +7386,12 @@
             <property role="lacIc" value="import Card from &quot;./Card&quot;;" />
           </node>
           <node concept="l8MVK" id="7Ot2$8oCev_" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKiom0" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKiom1" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKiom2" role="lcghm" />
         </node>
         <node concept="lc7rE" id="7Ot2$8oCl$1" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8oCnmK" role="lcghm" />
@@ -7433,7 +7511,7 @@
             <node concept="1bpajm" id="7Ot2$8oCE5o" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8oCE81" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8oCE9s" role="lcghm">
-                <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                <property role="lacIc" value="return (&lt;Layout&gt;" />
               </node>
               <node concept="l8MVK" id="7Ot2$8oCEaD" role="lcghm" />
             </node>
@@ -7863,7 +7941,7 @@
             <node concept="1bpajm" id="7Ot2$8oCXDb" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8oCYnL" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8oCZgh" role="lcghm">
-                <property role="lacIc" value="&lt;/div&gt;);" />
+                <property role="lacIc" value="&lt;/Layout&gt;);" />
               </node>
               <node concept="l8MVK" id="7Ot2$8oCZhv" role="lcghm" />
             </node>
@@ -7930,6 +8008,12 @@
             <property role="lacIc" value="import Button from &quot;./Button&quot;;" />
           </node>
           <node concept="l8MVK" id="7Ot2$8oFkeX" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKiCOf" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKiCOg" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKiCOh" role="lcghm" />
         </node>
         <node concept="lc7rE" id="7Ot2$8oFsej" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8oFuJ0" role="lcghm" />
@@ -8176,7 +8260,7 @@
                 <node concept="1bpajm" id="7Ot2$8oFRa3" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oFRaP" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oFRbk" role="lcghm">
-                    <property role="lacIc" value="{ride.date !== undefined ? &lt;div className=&quot;py-10 float-left w-3/5&quot;&gt;" />
+                    <property role="lacIc" value="{ride.date !== undefined ? &lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oFRcx" role="lcghm" />
                 </node>
@@ -8972,7 +9056,7 @@
                 <node concept="1bpajm" id="7Ot2$8oI5Eq" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oI6dk" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oI7oW" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt; : &quot;&quot;}" />
+                    <property role="lacIc" value="&lt;/Layout&gt; : &quot;&quot;}" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oI7q9" role="lcghm" />
                 </node>
@@ -9260,6 +9344,12 @@
           </node>
           <node concept="l8MVK" id="7Ot2$8oOY1G" role="lcghm" />
         </node>
+        <node concept="lc7rE" id="1OEAlWKiW5h" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKiW5i" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKiW5j" role="lcghm" />
+        </node>
         <node concept="lc7rE" id="7Ot2$8oP5PZ" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8oPdDX" role="lcghm" />
         </node>
@@ -9422,7 +9512,7 @@
                 <node concept="1bpajm" id="7Ot2$8oP$4B" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oP$aI" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oP$bR" role="lcghm">
-                    <property role="lacIc" value="{isReady ? &lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                    <property role="lacIc" value="{isReady ? &lt;Layout&gt;" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oP$d4" role="lcghm" />
                 </node>
@@ -9568,7 +9658,7 @@
                 <node concept="1bpajm" id="7Ot2$8oPFI1" role="3cqZAp" />
                 <node concept="lc7rE" id="7Ot2$8oPGe_" role="3cqZAp">
                   <node concept="la8eA" id="7Ot2$8oPGoM" role="lcghm">
-                    <property role="lacIc" value="&lt;/div&gt; : &quot; &quot;}" />
+                    <property role="lacIc" value="&lt;/Layout&gt; : &quot; &quot;}" />
                   </node>
                   <node concept="l8MVK" id="7Ot2$8oPGpZ" role="lcghm" />
                 </node>
@@ -9627,6 +9717,12 @@
             <property role="lacIc" value="import RideCard from &quot;./RideCard&quot;;" />
           </node>
           <node concept="l8MVK" id="7Ot2$8oSuo5" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKjcv2" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKjcv3" role="lcghm">
+            <property role="lacIc" value="import Layout from &quot;./Layout&quot;;" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKjcv4" role="lcghm" />
         </node>
         <node concept="lc7rE" id="7Ot2$8oSAhS" role="3cqZAp">
           <node concept="l8MVK" id="7Ot2$8oSCDY" role="lcghm" />
@@ -9744,7 +9840,7 @@
             <node concept="1bpajm" id="7Ot2$8oT9fY" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8oT9ix" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8oT9jT" role="lcghm">
-                <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5&quot;}&gt;" />
+                <property role="lacIc" value="return (&lt;Layout&gt;" />
               </node>
               <node concept="l8MVK" id="7Ot2$8oT9oc" role="lcghm" />
             </node>
@@ -9776,7 +9872,7 @@
             <node concept="1bpajm" id="7Ot2$8oT9By" role="3cqZAp" />
             <node concept="lc7rE" id="7Ot2$8oT9EH" role="3cqZAp">
               <node concept="la8eA" id="7Ot2$8oT9Gp" role="lcghm">
-                <property role="lacIc" value="&lt;/div&gt;);" />
+                <property role="lacIc" value="&lt;/Layout&gt;);" />
               </node>
               <node concept="l8MVK" id="7Ot2$8oT9HA" role="lcghm" />
             </node>
@@ -10099,28 +10195,53 @@
                             </node>
                             <node concept="3izx1p" id="bsHfLmlJA7" role="3cqZAp">
                               <node concept="3clFbS" id="bsHfLmlJA9" role="3izTki">
-                                <node concept="1bpajm" id="bsHfLmlJAB" role="3cqZAp" />
-                                <node concept="lc7rE" id="bsHfLmlJBp" role="3cqZAp">
-                                  <node concept="la8eA" id="bsHfLmlJBS" role="lcghm">
-                                    <property role="lacIc" value="&lt;div className={&quot;col-span-1 float-right&quot;}&gt;" />
-                                  </node>
-                                  <node concept="l8MVK" id="bsHfLmlJD5" role="lcghm" />
-                                </node>
-                                <node concept="3izx1p" id="bsHfLmlJDW" role="3cqZAp">
-                                  <node concept="3clFbS" id="bsHfLmlJDY" role="3izTki">
-                                    <node concept="1bpajm" id="bsHfLmlJEs" role="3cqZAp" />
-                                    <node concept="lc7rE" id="bsHfLmlJFe" role="3cqZAp">
-                                      <node concept="la8eA" id="bsHfLmlJFH" role="lcghm">
-                                        <property role="lacIc" value="&lt;Navbar/&gt;" />
+                                <node concept="3clFbJ" id="1OEAlWKh7QX" role="3cqZAp">
+                                  <node concept="3clFbS" id="1OEAlWKh7QZ" role="3clFbx">
+                                    <node concept="1bpajm" id="bsHfLmlJAB" role="3cqZAp" />
+                                    <node concept="lc7rE" id="bsHfLmlJBp" role="3cqZAp">
+                                      <node concept="la8eA" id="bsHfLmlJBS" role="lcghm">
+                                        <property role="lacIc" value="&lt;div className={&quot;col-span-1 float-right&quot;}&gt;" />
                                       </node>
-                                      <node concept="l8MVK" id="bsHfLmlJGU" role="lcghm" />
+                                      <node concept="l8MVK" id="bsHfLmlJD5" role="lcghm" />
+                                    </node>
+                                    <node concept="3izx1p" id="bsHfLmlJDW" role="3cqZAp">
+                                      <node concept="3clFbS" id="bsHfLmlJDY" role="3izTki">
+                                        <node concept="1bpajm" id="bsHfLmlJEs" role="3cqZAp" />
+                                        <node concept="lc7rE" id="bsHfLmlJFe" role="3cqZAp">
+                                          <node concept="la8eA" id="bsHfLmlJFH" role="lcghm">
+                                            <property role="lacIc" value="&lt;Navbar/&gt;" />
+                                          </node>
+                                          <node concept="l8MVK" id="bsHfLmlJGU" role="lcghm" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="1bpajm" id="bsHfLmlJHR" role="3cqZAp" />
+                                    <node concept="lc7rE" id="bsHfLmlJIY" role="3cqZAp">
+                                      <node concept="la8eA" id="bsHfLmlJJC" role="lcghm">
+                                        <property role="lacIc" value="&lt;/div&gt;" />
+                                      </node>
                                     </node>
                                   </node>
-                                </node>
-                                <node concept="1bpajm" id="bsHfLmlJHR" role="3cqZAp" />
-                                <node concept="lc7rE" id="bsHfLmlJIY" role="3cqZAp">
-                                  <node concept="la8eA" id="bsHfLmlJJC" role="lcghm">
-                                    <property role="lacIc" value="&lt;/div&gt;" />
+                                  <node concept="3clFbC" id="1OEAlWKh9Lc" role="3clFbw">
+                                    <node concept="2OqwBi" id="1OEAlWKhbmA" role="3uHU7w">
+                                      <node concept="1XH99k" id="1OEAlWKh9U$" role="2Oq$k0">
+                                        <ref role="1XH99l" to="7755:1DzyiJu$YIv" resolve="NavbarPosition" />
+                                      </node>
+                                      <node concept="2ViDtV" id="1OEAlWKhcgP" role="2OqNvi">
+                                        <ref role="2ViDtZ" to="7755:1DzyiJu$YIw" resolve="left" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="1OEAlWKh8O1" role="3uHU7B">
+                                      <node concept="2OqwBi" id="1OEAlWKh8wu" role="2Oq$k0">
+                                        <node concept="117lpO" id="1OEAlWKh8m_" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="1OEAlWKh8Ab" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="7755:1DzyiJu$YQA" resolve="navbar" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="1OEAlWKh9n6" role="2OqNvi">
+                                        <ref role="3TsBF5" to="7755:1DzyiJu$YIt" resolve="position" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="1bpajm" id="bsHfLmlJKY" role="3cqZAp" />
@@ -10474,6 +10595,56 @@
                                   </node>
                                   <node concept="l8MVK" id="bsHfLmm44e" role="lcghm" />
                                 </node>
+                                <node concept="3clFbJ" id="1OEAlWKheOV" role="3cqZAp">
+                                  <node concept="3clFbS" id="1OEAlWKheOW" role="3clFbx">
+                                    <node concept="1bpajm" id="1OEAlWKheOX" role="3cqZAp" />
+                                    <node concept="lc7rE" id="1OEAlWKheOY" role="3cqZAp">
+                                      <node concept="la8eA" id="1OEAlWKheOZ" role="lcghm">
+                                        <property role="lacIc" value="&lt;div className={&quot;col-span-1 float-right&quot;}&gt;" />
+                                      </node>
+                                      <node concept="l8MVK" id="1OEAlWKheP0" role="lcghm" />
+                                    </node>
+                                    <node concept="3izx1p" id="1OEAlWKheP1" role="3cqZAp">
+                                      <node concept="3clFbS" id="1OEAlWKheP2" role="3izTki">
+                                        <node concept="1bpajm" id="1OEAlWKheP3" role="3cqZAp" />
+                                        <node concept="lc7rE" id="1OEAlWKheP4" role="3cqZAp">
+                                          <node concept="la8eA" id="1OEAlWKheP5" role="lcghm">
+                                            <property role="lacIc" value="&lt;Navbar/&gt;" />
+                                          </node>
+                                          <node concept="l8MVK" id="1OEAlWKheP6" role="lcghm" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="1bpajm" id="1OEAlWKheP7" role="3cqZAp" />
+                                    <node concept="lc7rE" id="1OEAlWKheP8" role="3cqZAp">
+                                      <node concept="la8eA" id="1OEAlWKheP9" role="lcghm">
+                                        <property role="lacIc" value="&lt;/div&gt;" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbC" id="1OEAlWKhePa" role="3clFbw">
+                                    <node concept="2OqwBi" id="1OEAlWKhePb" role="3uHU7w">
+                                      <node concept="1XH99k" id="1OEAlWKhePc" role="2Oq$k0">
+                                        <ref role="1XH99l" to="7755:1DzyiJu$YIv" resolve="NavbarPosition" />
+                                      </node>
+                                      <node concept="2ViDtV" id="1OEAlWKhg1A" role="2OqNvi">
+                                        <ref role="2ViDtZ" to="7755:1DzyiJu$YIx" resolve="right" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="1OEAlWKhePe" role="3uHU7B">
+                                      <node concept="2OqwBi" id="1OEAlWKhePf" role="2Oq$k0">
+                                        <node concept="117lpO" id="1OEAlWKhePg" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="1OEAlWKhePh" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="7755:1DzyiJu$YQA" resolve="navbar" />
+                                        </node>
+                                      </node>
+                                      <node concept="3TrcHB" id="1OEAlWKhePi" role="2OqNvi">
+                                        <ref role="3TsBF5" to="7755:1DzyiJu$YIt" resolve="position" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbH" id="1OEAlWKheeu" role="3cqZAp" />
                               </node>
                             </node>
                             <node concept="1bpajm" id="bsHfLmm4$9" role="3cqZAp" />
@@ -10875,6 +11046,71 @@
             <property role="lacIc" value="}" />
           </node>
           <node concept="l8MVK" id="1OEAlWKcsyW" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKfniI" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKfuGl" role="lcghm">
+            <property role="lacIc" value="// --------- Layout.js ---------" />
+          </node>
+          <node concept="l8MVK" id="3aC06m058mT" role="lcghm" />
+        </node>
+        <node concept="lc7rE" id="1OEAlWKfA8s" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKfHy6" role="lcghm">
+            <property role="lacIc" value="export default function (props) {" />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKfHyW" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="1OEAlWKgtIW" role="3cqZAp">
+          <node concept="3clFbS" id="1OEAlWKgtIY" role="3izTki">
+            <node concept="3clFbJ" id="1OEAlWKfOWY" role="3cqZAp">
+              <node concept="3clFbS" id="1OEAlWKfOX0" role="3clFbx">
+                <node concept="1bpajm" id="1OEAlWKgGO9" role="3cqZAp" />
+                <node concept="lc7rE" id="1OEAlWKg1SR" role="3cqZAp">
+                  <node concept="la8eA" id="1OEAlWKg1Tl" role="lcghm">
+                    <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-left w-3/5 space-y-5 text-center&quot;}&gt;{props.children}&lt;/div&gt;)" />
+                  </node>
+                  <node concept="l8MVK" id="1OEAlWKg1VY" role="lcghm" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="1OEAlWKfYRj" role="3clFbw">
+                <node concept="2OqwBi" id="1OEAlWKg0Po" role="3uHU7w">
+                  <node concept="1XH99k" id="1OEAlWKfZ28" role="2Oq$k0">
+                    <ref role="1XH99l" to="7755:1DzyiJu$YIv" resolve="NavbarPosition" />
+                  </node>
+                  <node concept="2ViDtV" id="1OEAlWKg1JB" role="2OqNvi">
+                    <ref role="2ViDtZ" to="7755:1DzyiJu$YIw" resolve="left" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1OEAlWKfXea" role="3uHU7B">
+                  <node concept="2OqwBi" id="1OEAlWKfWwU" role="2Oq$k0">
+                    <node concept="117lpO" id="1OEAlWKfWmK" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="1OEAlWKfX0k" role="2OqNvi">
+                      <ref role="3Tt5mk" to="7755:1DzyiJu$YQA" resolve="navbar" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="1OEAlWKfXLf" role="2OqNvi">
+                    <ref role="3TsBF5" to="7755:1DzyiJu$YIt" resolve="position" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="1OEAlWKg1Wt" role="9aQIa">
+                <node concept="3clFbS" id="1OEAlWKg1Wu" role="9aQI4">
+                  <node concept="1bpajm" id="1OEAlWKgGQr" role="3cqZAp" />
+                  <node concept="lc7rE" id="1OEAlWKg25W" role="3cqZAp">
+                    <node concept="la8eA" id="1OEAlWKg26o" role="lcghm">
+                      <property role="lacIc" value="return (&lt;div className={&quot;py-10 float-right w-3/5 space-y-5 text-center&quot;}&gt;{props.children}&lt;/div&gt;)" />
+                    </node>
+                    <node concept="l8MVK" id="1OEAlWKg27e" role="lcghm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="1OEAlWKgOnF" role="3cqZAp">
+          <node concept="la8eA" id="1OEAlWKgVS$" role="lcghm">
+            <property role="lacIc" value="}; " />
+          </node>
+          <node concept="l8MVK" id="1OEAlWKgVTO" role="lcghm" />
         </node>
         <node concept="3clFbH" id="1OEAlWK92Vb" role="3cqZAp" />
       </node>
