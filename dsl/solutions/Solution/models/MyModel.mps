@@ -87,10 +87,6 @@
       <concept id="6714484296018352701" name="DSL.structure.TitleRide" flags="ng" index="JcBBp">
         <property id="6714484296018352704" name="titleRide" index="JcBA$" />
       </concept>
-      <concept id="6714484296018019884" name="DSL.structure.RideAdd" flags="ng" index="Jemn8">
-        <property id="6714484296018019887" name="url" index="Jemnb" />
-        <child id="1901514289189854079" name="onNavbar" index="347x9k" />
-      </concept>
       <concept id="6714484296018019750" name="DSL.structure.Port" flags="ng" index="Jemp2">
         <property id="6714484296018019753" name="port" index="Jempd" />
       </concept>
@@ -101,19 +97,16 @@
       <concept id="6714484296017862751" name="DSL.structure.Root" flags="ng" index="JeWeV">
         <property id="6714484296017974888" name="title" index="Jermc" />
         <property id="6714484296017974879" name="name_" index="JermV" />
-        <child id="6714484296018254467" name="rideAdd" index="Jdv_B" />
         <child id="6714484296018254463" name="api" index="JdvAr" />
         <child id="7123760922561405413" name="ridesDictionary" index="2OM4WP" />
         <child id="1901514289189854062" name="rides" index="347x95" />
         <child id="1901514289189853171" name="usersDictionary" index="347xVo" />
         <child id="1901514289190470502" name="login" index="34T8Dd" />
-        <child id="1901514289190470494" name="register" index="34T8DP" />
         <child id="1901514289190470487" name="ride" index="34T8DW" />
         <child id="1901514289190635237" name="profileEdit" index="34UwZe" />
         <child id="1901514289191316902" name="navbar" index="34W6id" />
         <child id="1901514289191316916" name="colors" index="34W6iv" />
         <child id="1901514289191316877" name="profile" index="34W6iA" />
-        <child id="1901514289191316865" name="user" index="34W6iE" />
         <child id="1901514289191316889" name="search" index="34W6iM" />
         <child id="1901514289191316961" name="theme" index="34W6ja" />
         <child id="1901514289191316977" name="port" index="34W6jq" />
@@ -161,6 +154,7 @@
       <concept id="1901514289189853606" name="DSL.structure.Rides" flags="ng" index="347x2d">
         <property id="1901514289189853609" name="url" index="347x22" />
         <child id="1901514289189853628" name="listOrientation" index="347x2n" />
+        <child id="1901514289189853648" name="onNavbar" index="347x3V" />
       </concept>
       <concept id="1901514289189853631" name="DSL.structure.ListOrientation" flags="ng" index="347x2k" />
       <concept id="1901514289189853616" name="DSL.structure.OnNavbar" flags="ng" index="347x2r">
@@ -192,9 +186,6 @@
       <concept id="1901514289190306311" name="DSL.structure.Login" flags="ng" index="34TKGG">
         <property id="1901514289190306312" name="url" index="34TKGz" />
       </concept>
-      <concept id="1901514289190306308" name="DSL.structure.Register" flags="ng" index="34TKGJ">
-        <property id="1901514289190306309" name="url" index="34TKGI" />
-      </concept>
       <concept id="1901514289190635007" name="DSL.structure.ProfileEdit" flags="ng" index="34UwNk">
         <property id="1901514289190635008" name="url" index="34UwWF" />
         <child id="1901514289190635010" name="onNavbar" index="34UwWD" />
@@ -205,9 +196,7 @@
       <concept id="1901514289191316771" name="DSL.structure.Owner" flags="ng" index="34W6g8">
         <property id="1901514289191316774" name="owner" index="34W6gd" />
       </concept>
-      <concept id="1901514289191316815" name="DSL.structure.Theme" flags="ng" index="34W6h$">
-        <property id="1901514289191316818" name="theme" index="34W6hT" />
-      </concept>
+      <concept id="1901514289191316815" name="DSL.structure.Theme" flags="ng" index="34W6h$" />
       <concept id="1901514289191316497" name="DSL.structure.Colors" flags="ng" index="34W6kU">
         <property id="1901514289191316502" name="primaryDark" index="34W6kX" />
         <property id="1901514289191316500" name="primaryLight" index="34W6kZ" />
@@ -217,14 +206,8 @@
       </concept>
       <concept id="1901514289191128393" name="DSL.structure.Profile" flags="ng" index="34WChy">
         <property id="1901514289191128396" name="url" index="34WChB" />
+        <child id="1901514289191128403" name="onNavbar" index="34WChS" />
         <child id="1901514289191128400" name="longButtons" index="34WChV" />
-      </concept>
-      <concept id="1901514289191128142" name="DSL.structure.User" flags="ng" index="34WCl_">
-        <property id="1901514289191128145" name="url" index="34WClU" />
-        <child id="1901514289191128151" name="showComments" index="34WClW" />
-      </concept>
-      <concept id="1901514289191128153" name="DSL.structure.ShowComments" flags="ng" index="34WClM">
-        <property id="1901514289191128156" name="showComments" index="34WClR" />
       </concept>
       <concept id="1901514289191128636" name="DSL.structure.Search" flags="ng" index="34WCsn">
         <property id="1901514289191128639" name="url" index="34WCsk" />
@@ -274,7 +257,9 @@
     </node>
     <node concept="34WCsn" id="41GtFTLg2DW" role="34W6iM">
       <property role="34WCsk" value="/iskanje" />
-      <node concept="347x2r" id="41GtFTLhJtp" role="34WCtE" />
+      <node concept="347x2r" id="41GtFTLhJtp" role="34WCtE">
+        <property role="347x2s" value="true" />
+      </node>
       <node concept="34WCtH" id="41GtFTLlI9F" role="34WCtC">
         <property role="34WCty" value="Isci med poljubnimi prevozi" />
       </node>
@@ -285,6 +270,9 @@
     <node concept="347x2d" id="41GtFTLg2DY" role="347x95">
       <property role="347x22" value="/prevozi" />
       <node concept="347x2k" id="41GtFTLonpu" role="347x2n" />
+      <node concept="347x2r" id="2I0Gko6uPrJ" role="347x3V">
+        <property role="347x2s" value="true" />
+      </node>
     </node>
     <node concept="34W6g8" id="41GtFTLgnBc" role="34W6sD">
       <property role="34W6gd" value="Stopayexx" />
@@ -292,9 +280,7 @@
     <node concept="Jemp2" id="41GtFTLgG_B" role="34W6jq">
       <property role="Jempd" value="3001" />
     </node>
-    <node concept="34W6h$" id="41GtFTLgG_D" role="34W6ja">
-      <property role="34W6hT" value="1DzyiJu$YPm/light" />
-    </node>
+    <node concept="34W6h$" id="41GtFTLgG_D" role="34W6ja" />
     <node concept="JeKB$" id="41GtFTLgG_F" role="JdvAr">
       <node concept="Jemp2" id="41GtFTLh000" role="JcGDQ">
         <property role="Jempd" value="3001" />
@@ -311,11 +297,8 @@
       <node concept="347x20" id="41GtFTLhJtB" role="34WChV">
         <property role="347x25" value="true" />
       </node>
-    </node>
-    <node concept="34WCl_" id="41GtFTLhAOJ" role="34W6iE">
-      <property role="34WClU" value="/uporabnik" />
-      <node concept="34WClM" id="41GtFTLqy3t" role="34WClW">
-        <property role="34WClR" value="true" />
+      <node concept="347x2r" id="2I0Gko6uPrH" role="34WChS">
+        <property role="347x2s" value="true" />
       </node>
     </node>
     <node concept="34TKGG" id="41GtFTLhAOL" role="34T8Dd">
@@ -323,24 +306,6 @@
     </node>
     <node concept="1__7L3" id="41GtFTLhAON" role="1__7KN">
       <property role="1__7L0" value="/odjava" />
-    </node>
-    <node concept="34TKGJ" id="41GtFTLhAOP" role="34T8DP">
-      <property role="34TKGI" value="/registracija" />
-    </node>
-    <node concept="34UwNk" id="41GtFTLhAOR" role="34UwZe">
-      <property role="34UwWF" value="/uredi" />
-      <node concept="347x2r" id="41GtFTLhJtn" role="34UwWD">
-        <property role="347x2s" value="true" />
-      </node>
-    </node>
-    <node concept="Jemn8" id="41GtFTLhAOZ" role="Jdv_B">
-      <property role="Jemnb" value="/dodaj" />
-      <node concept="347x2r" id="41GtFTLiY53" role="347x9k">
-        <property role="347x2s" value="true" />
-      </node>
-    </node>
-    <node concept="37cGhx" id="41GtFTLhAP1" role="37cGgw">
-      <property role="37cGhz" value="/prevoz/uredi" />
     </node>
     <node concept="347xGE" id="41GtFTLhJsT" role="347xVo">
       <node concept="2OL448" id="41GtFTLhJsV" role="347xGJ">
@@ -462,6 +427,15 @@
       <node concept="1_EEYh" id="41GtFTLhJuh" role="1_EEYk">
         <property role="1_EEYn" value="Brisi" />
       </node>
+    </node>
+    <node concept="34UwNk" id="3jHfzT1srz0" role="34UwZe">
+      <property role="34UwWF" value="/uredi" />
+      <node concept="347x2r" id="3jHfzT1srz2" role="34UwWD">
+        <property role="347x2s" value="true" />
+      </node>
+    </node>
+    <node concept="37cGhx" id="3jHfzT1srz4" role="37cGgw">
+      <property role="37cGhz" value="/prevoz/uredi" />
     </node>
   </node>
 </model>
