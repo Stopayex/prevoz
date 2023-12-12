@@ -8,9 +8,7 @@
   <registry>
     <language id="e5fe35c4-b143-450c-93f1-f1697b004278" name="DSL">
       <concept id="6714484296018352695" name="DSL.structure.RidesDictionary" flags="ng" index="JcBBj" />
-      <concept id="6714484296018019884" name="DSL.structure.RideAdd" flags="ng" index="Jemn8">
-        <property id="6714484296018019887" name="url" index="Jemnb" />
-      </concept>
+      <concept id="6714484296018019884" name="DSL.structure.RideAdd" flags="ng" index="Jemn8" />
       <concept id="6714484296018019750" name="DSL.structure.Port" flags="ng" index="Jemp2">
         <property id="6714484296018019753" name="port" index="Jempd" />
       </concept>
@@ -43,9 +41,7 @@
       </concept>
       <concept id="1901514289189853611" name="DSL.structure.LongButtons" flags="ng" index="347x20" />
       <concept id="1901514289189853606" name="DSL.structure.Rides" flags="ng" index="347x2d">
-        <property id="1901514289189853609" name="url" index="347x22" />
         <child id="1901514289189853628" name="listOrientation" index="347x2n" />
-        <child id="1901514289189853648" name="onNavbar" index="347x3V" />
       </concept>
       <concept id="1901514289189853631" name="DSL.structure.ListOrientation" flags="ng" index="347x2k" />
       <concept id="1901514289189853616" name="DSL.structure.OnNavbar" flags="ng" index="347x2r" />
@@ -106,7 +102,7 @@
   </registry>
   <node concept="JeWeV" id="5z9hjk4OM0B">
     <property role="JermV" value="RideApp" />
-    <property role="Jermc" value="Naslov" />
+    <property role="Jermc" value="Rides" />
     <property role="1s2GZk" value="3001" />
     <node concept="34W6g8" id="5z9hjk4OM0C" role="34W6sD">
       <property role="34W6gd" value="Stopayex" />
@@ -117,7 +113,7 @@
         <property role="Jempd" value="3000" />
       </node>
       <node concept="34W6nO" id="5z9hjk4OM0G" role="34W6nR">
-        <property role="34W6n9" value="htpp://lol" />
+        <property role="34W6n9" value="https://127.0.0.1" />
       </node>
     </node>
     <node concept="34W6kU" id="5z9hjk4OM0H" role="34W6iv">
@@ -130,8 +126,8 @@
     <node concept="34WCsn" id="5z9hjk4OM0J" role="34W6iM">
       <property role="34WCsk" value="/iskanje" />
       <node concept="347x2r" id="5z9hjk4QxG8" role="34WCtE" />
-      <node concept="34WCtH" id="5z9hjk4QxGa" role="34WCtC">
-        <property role="34WCty" value="Isci po prevozih" />
+      <node concept="34WCtH" id="28s3cTuroDO" role="34WCtC">
+        <property role="34WCty" value="Find rides on selected locations and dates!" />
       </node>
     </node>
     <node concept="34WChy" id="5z9hjk4OM0K" role="34W6iA">
@@ -143,16 +139,11 @@
       <property role="34TKGz" value="/prijava" />
     </node>
     <node concept="1__7L3" id="5z9hjk4OM0M" role="1__7KN">
-      <property role="1__7L0" value="/odjava" />
+      <property role="1__7L0" value="/" />
     </node>
     <node concept="34TKyV" id="5z9hjk4OM0N" role="34T8DW">
       <property role="34TKyS" value="/prevoz" />
       <node concept="347x20" id="5z9hjk4QxGq" role="34TKyR" />
-    </node>
-    <node concept="347x2d" id="5z9hjk4OM0O" role="347x95">
-      <property role="347x22" value="/prevozi" />
-      <node concept="347x2k" id="5z9hjk4OM0P" role="347x2n" />
-      <node concept="347x2r" id="5z9hjk4QxGu" role="347x3V" />
     </node>
     <node concept="347xGE" id="5z9hjk4OM0S" role="347xVo" />
     <node concept="34WCl_" id="5z9hjk4QxGg" role="34W6iE">
@@ -167,11 +158,12 @@
       <property role="37cGhz" value="/prevoz/uredi" />
     </node>
     <node concept="JcBBj" id="5z9hjk4YEDi" role="2OM4WP" />
-    <node concept="Jemn8" id="28s3cTumL_B" role="Jdv_B">
-      <property role="Jemnb" value="/dodaj" />
-    </node>
     <node concept="34TKGJ" id="28s3cTumYnU" role="34T8DP">
       <property role="34TKGI" value="/registracija" />
+    </node>
+    <node concept="Jemn8" id="28s3cTuAAka" role="Jdv_B" />
+    <node concept="347x2d" id="28s3cTuByQ9" role="347x95">
+      <node concept="347x2k" id="28s3cTuByQa" role="347x2n" />
     </node>
   </node>
 </model>
