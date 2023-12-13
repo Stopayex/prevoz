@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {Navigate} from 'react-router-dom';
 import api from "../axios";
 import InputField from "./InputField";
@@ -6,6 +6,7 @@ import Button from "./Button";
 import Card from "./Card";
 import Select from "./Select";
 import Layout from "./Layout";
+import {UserContext} from "../userContext";
 
 function AddRide() {
     const [from, setFrom] = useState("Ljubljana");
@@ -20,6 +21,8 @@ function AddRide() {
     const [info, setInfo] = useState("Add a ride");
     const [isSuccess, setIsSuccess] = useState(false);
 
+    const userContext = useContext(UserContext);
+
     const add = () => {
         if (isSuccess) return
         if (from === "" || to === "" || date === "" || time === "" || seats === "" || price === "" || car === "" || phoneNumber === "") {
@@ -33,6 +36,7 @@ function AddRide() {
     }
 
     return (<Layout>
+        {!userContext.user ? <Navigate replace to="/login"/> : ""}
         {isSuccess ? <Navigate replace to="/rides"/> : ""}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Add ride</p>
         <Card><form onSubmit={(e) => {e.preventDefault();add();}}>

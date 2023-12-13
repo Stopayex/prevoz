@@ -5,6 +5,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 import Card from "./Card";
 import Layout from "./Layout";
+import {Navigate} from "react-router-dom";
 
 function Edit() {
     const [password, setPassword] = useState("");
@@ -38,6 +39,7 @@ function Edit() {
     }, []);
 
     return (<Layout>
+        {!userContext.user ? <Navigate replace to="/login"/> : ""}
         <p className="text-tertiary text-3xl font-bold mb-5 text-left">Edit</p>
         <Card><form onSubmit={(e) => {e.preventDefault();edit();}}>
             <div className="space-y-3">
